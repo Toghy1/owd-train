@@ -1,0 +1,2998 @@
+{
+  "RootName": "DataModels",
+  "CTVER": "43543432",
+  "TableCount": 27,
+  "LastModel": "tms",
+  "Count": 1,
+  "items": [{
+    "ID": 1,
+    "Name": "tms",
+    "CreateDate": "2026-01-15 15:36:28",
+    "OrderNo": 1,
+    "CustomAttr1": "DVS:-1289.67,-602.01,1.27,1,",
+    "DefDbEngine": "MYSQL",
+    "DbConnectStr": "TCtMetaMysqlDb",
+    "ConfigStr": "DrawerWidth=3586\r\nDrawerHeight=1972\r\nWorkAreaColor=16777215\r\nSelectedColor=16711680\r\nDefaultObjectColor=15921906\r\nDefaultTitleColor=255\r\nDefaultPKColor=16711935\r\nDefaultFKColor=16711680\r\nDefaultBorderColor=12632256\r\nDefaultLineColor=16711680\r\nDefaultGroupEdgeColor=128\r\nShowFieldType=1\r\nShowFieldIcon=1\r\nShowPhyFieldName=1\r\nDatabaseEngine=\r\nGenFKIndexesSQL=0\r\nIndependPosForOverviewMode=0\r\n",
+    "Tables": {
+      "Count": 27,
+      "items": [
+        {
+          "Name": "a_template_city_distance",
+          "OrderNo": 1,
+          "GraphDesc": "Left=-15.21\r\nTop=77.54\r\nBLeft=-7.60\r\nBTop=38.77",
+          "MetaFields": {
+            "Count": 5,
+            "items": [
+              {
+                "ID": 1,
+                "Name": "id",
+                "OrderNo": 1,
+                "DataType": 2,
+                "KeyFieldType": 1,
+                "DefaultValue": "{auto_increment}",
+                "Not_Nullable": true
+              },
+              {
+                "ID": 2,
+                "Name": "city_no1",
+                "OrderNo": 2,
+                "DataType": 2
+              },
+              {
+                "ID": 3,
+                "Name": "city_no2",
+                "OrderNo": 3,
+                "DataType": 2
+              },
+              {
+                "ID": 4,
+                "Name": "distance",
+                "OrderNo": 4,
+                "DataType": 2
+              },
+              {
+                "ID": 5,
+                "Name": "remark",
+                "OrderNo": 5,
+                "DataType": 1,
+                "DataLength": 10
+              }
+            ]
+          }
+        },
+        {
+          "Name": "base_complex",
+          "OrderNo": 2,
+          "GraphDesc": "Left=1546.52\r\nTop=1178.85\r\nBLeft=773.26\r\nBTop=589.42",
+          "MetaFields": {
+            "Count": 9,
+            "items": [
+              {
+                "ID": 1,
+                "Name": "id",
+                "OrderNo": 1,
+                "DataType": 2,
+                "KeyFieldType": 1,
+                "DefaultValue": "{auto_increment}",
+                "Not_Nullable": true
+              },
+              {
+                "ID": 2,
+                "Name": "complex_name",
+                "OrderNo": 2,
+                "DataType": 1,
+                "DataLength": 200
+              },
+              {
+                "ID": 3,
+                "Name": "province_id",
+                "OrderNo": 3,
+                "DataType": 2
+              },
+              {
+                "ID": 4,
+                "Name": "city_id",
+                "OrderNo": 4,
+                "DataType": 2
+              },
+              {
+                "ID": 5,
+                "Name": "district_id",
+                "OrderNo": 5,
+                "DataType": 2
+              },
+              {
+                "ID": 6,
+                "Name": "district_name",
+                "OrderNo": 6,
+                "DataType": 1,
+                "DataLength": 200
+              },
+              {
+                "ID": 7,
+                "Name": "create_time",
+                "OrderNo": 7,
+                "DataType": 4
+              },
+              {
+                "ID": 8,
+                "Name": "update_time",
+                "OrderNo": 8,
+                "DataType": 4
+              },
+              {
+                "ID": 9,
+                "Name": "is_deleted",
+                "OrderNo": 9,
+                "DataType": 1,
+                "DefaultValue": "0",
+                "DataLength": 2
+              }
+            ]
+          }
+        },
+        {
+          "Name": "base_dic",
+          "Caption": "数据字典",
+          "OrderNo": 3,
+          "GraphDesc": "Left=82.69\r\nTop=237.01\r\nBLeft=41.34\r\nBTop=118.51",
+          "MetaFields": {
+            "Count": 7,
+            "items": [
+              {
+                "ID": 1,
+                "Name": "id",
+                "OrderNo": 1,
+                "DisplayName": "id",
+                "DataType": 2,
+                "KeyFieldType": 1,
+                "DefaultValue": "0",
+                "Not_Nullable": true
+              },
+              {
+                "ID": 2,
+                "Name": "parent_id",
+                "OrderNo": 2,
+                "DisplayName": "上级id",
+                "DataType": 2,
+                "IndexType": 2,
+                "DefaultValue": "0",
+                "Not_Nullable": true
+              },
+              {
+                "ID": 3,
+                "Name": "name",
+                "OrderNo": 3,
+                "DisplayName": "名称",
+                "DataType": 1,
+                "Not_Nullable": true,
+                "DataLength": 100
+              },
+              {
+                "ID": 4,
+                "Name": "dict_code",
+                "OrderNo": 4,
+                "DisplayName": "编码",
+                "DataType": 1,
+                "IndexType": 2,
+                "DataLength": 20
+              },
+              {
+                "ID": 5,
+                "Name": "create_time",
+                "OrderNo": 5,
+                "DisplayName": "创建时间",
+                "DataType": 4,
+                "DefaultValue": "CURRENT_TIMESTAMP"
+              },
+              {
+                "ID": 6,
+                "Name": "update_time",
+                "OrderNo": 6,
+                "DisplayName": "更新时间",
+                "DataType": 4
+              },
+              {
+                "ID": 7,
+                "Name": "is_deleted",
+                "Memo": "删除标记（0:不可用 1:可用）",
+                "OrderNo": 7,
+                "DisplayName": "删除标记",
+                "DataType": 6,
+                "DefaultValue": "1"
+              }
+            ]
+          }
+        },
+        {
+          "Name": "base_organ",
+          "Caption": "机构范围表",
+          "OrderNo": 4,
+          "GraphDesc": "Left=1285.33\r\nTop=445.00\r\nBLeft=642.67\r\nBTop=222.50",
+          "MetaFields": {
+            "Count": 9,
+            "items": [
+              {
+                "ID": 1,
+                "Name": "id",
+                "OrderNo": 1,
+                "DataType": 2,
+                "KeyFieldType": 1,
+                "RelateTable": "truck_team",
+                "RelateField": "id",
+                "DefaultValue": "{auto_increment}",
+                "Not_Nullable": true
+              },
+              {
+                "ID": 2,
+                "Name": "org_name",
+                "OrderNo": 2,
+                "DisplayName": "机构名称",
+                "DataType": 1,
+                "DataLength": 200
+              },
+              {
+                "ID": 3,
+                "Name": "org_level",
+                "OrderNo": 3,
+                "DisplayName": "行政级别",
+                "DataType": 2
+              },
+              {
+                "ID": 4,
+                "Name": "region_id",
+                "Memo": "区域id，1级机构为city ,2级机构为district",
+                "OrderNo": 4,
+                "DisplayName": "区域id",
+                "DataType": 2,
+                "KeyFieldType": 3,
+                "RelateTable": "base_region_info",
+                "RelateField": "id",
+                "GraphDesc": "P1=1360.00,803.68\r\nP2=1360.00,741.00\r\nP3=1360.00,741.00\r\nP4=1360.00,678.71\r\nHookP1=134.76,20.32\r\nHookP2=65.22,146.29\r\nMod_OP1=0\r\nMod_OP2=0\r\nMod_CP=0\r\nHorz1=0\r\nHorz2=0"
+              },
+              {
+                "ID": 5,
+                "Name": "org_parent_id",
+                "OrderNo": 5,
+                "DisplayName": "上级机构id",
+                "DataType": 2
+              },
+              {
+                "ID": 6,
+                "Name": "points",
+                "OrderNo": 6,
+                "DisplayName": "多边形经纬度坐标集合",
+                "DataType": 1,
+                "DataLength": 99999
+              },
+              {
+                "ID": 7,
+                "Name": "create_time",
+                "OrderNo": 7,
+                "DisplayName": "创建时间",
+                "DataType": 4,
+                "DefaultValue": "CURRENT_TIMESTAMP",
+                "Not_Nullable": true
+              },
+              {
+                "ID": 8,
+                "Name": "update_time",
+                "OrderNo": 8,
+                "DisplayName": "更新时间",
+                "DataType": 4,
+                "DefaultValue": "CURRENT_TIMESTAMP"
+              },
+              {
+                "ID": 9,
+                "Name": "is_deleted",
+                "Memo": "删除标记（0:不可用 1:可用）",
+                "OrderNo": 9,
+                "DisplayName": "删除标记",
+                "DataType": 1,
+                "DefaultValue": "0",
+                "Not_Nullable": true,
+                "DataLength": 20
+              }
+            ]
+          }
+        },
+        {
+          "Name": "base_region_info",
+          "Caption": "数据字典",
+          "OrderNo": 5,
+          "GraphDesc": "Left=1225.24\r\nTop=803.68\r\nBLeft=612.62\r\nBTop=401.84",
+          "MetaFields": {
+            "Count": 8,
+            "items": [
+              {
+                "ID": 1,
+                "Name": "id",
+                "OrderNo": 1,
+                "DisplayName": "id",
+                "DataType": 2,
+                "KeyFieldType": 1,
+                "DefaultValue": "0",
+                "Not_Nullable": true
+              },
+              {
+                "ID": 2,
+                "Name": "parent_id",
+                "OrderNo": 2,
+                "DisplayName": "上级id",
+                "DataType": 2,
+                "IndexType": 2,
+                "DefaultValue": "0",
+                "Not_Nullable": true
+              },
+              {
+                "ID": 3,
+                "Name": "name",
+                "OrderNo": 3,
+                "DisplayName": "名称",
+                "DataType": 1,
+                "Not_Nullable": true,
+                "DataLength": 100
+              },
+              {
+                "ID": 4,
+                "Name": "dict_code",
+                "OrderNo": 4,
+                "DisplayName": "编码",
+                "DataType": 1,
+                "IndexType": 2,
+                "DataLength": 20
+              },
+              {
+                "ID": 5,
+                "Name": "short_name",
+                "OrderNo": 5,
+                "DisplayName": "简称",
+                "DataType": 1,
+                "DataLength": 20
+              },
+              {
+                "ID": 6,
+                "Name": "create_time",
+                "OrderNo": 6,
+                "DisplayName": "创建时间",
+                "DataType": 4,
+                "DefaultValue": "CURRENT_TIMESTAMP",
+                "Not_Nullable": true
+              },
+              {
+                "ID": 7,
+                "Name": "update_time",
+                "OrderNo": 7,
+                "DisplayName": "更新时间",
+                "DataType": 4,
+                "DefaultValue": "CURRENT_TIMESTAMP",
+                "Not_Nullable": true
+              },
+              {
+                "ID": 8,
+                "Name": "is_deleted",
+                "Memo": "删除标记（0:不可用 1:可用）",
+                "OrderNo": 8,
+                "DisplayName": "删除标记",
+                "DataType": 6,
+                "DefaultValue": "1",
+                "Not_Nullable": true
+              }
+            ]
+          }
+        },
+        {
+          "Name": "employee_info",
+          "Caption": "职员表",
+          "OrderNo": 6,
+          "GraphDesc": "Left=1101.69\r\nTop=1174.08\r\nBLeft=550.85\r\nBTop=587.04",
+          "MetaFields": {
+            "Count": 16,
+            "items": [
+              {
+                "ID": 1,
+                "Name": "id",
+                "OrderNo": 1,
+                "DisplayName": "id",
+                "DataType": 2,
+                "KeyFieldType": 1,
+                "DefaultValue": "{auto_increment}",
+                "Not_Nullable": true
+              },
+              {
+                "ID": 2,
+                "Name": "username",
+                "OrderNo": 2,
+                "DisplayName": "名称",
+                "DataType": 1,
+                "IndexType": 1,
+                "Not_Nullable": true,
+                "DataLength": 20
+              },
+              {
+                "ID": 3,
+                "Name": "password",
+                "OrderNo": 3,
+                "DisplayName": "密码",
+                "DataType": 1,
+                "Not_Nullable": true,
+                "DataLength": 32
+              },
+              {
+                "ID": 4,
+                "Name": "real_name",
+                "OrderNo": 4,
+                "DisplayName": "姓名",
+                "DataType": 1,
+                "DataLength": 50
+              },
+              {
+                "ID": 5,
+                "Name": "id_card",
+                "OrderNo": 5,
+                "DisplayName": "身份证号",
+                "DataType": 1,
+                "DataLength": 50
+              },
+              {
+                "ID": 6,
+                "Name": "phone",
+                "OrderNo": 6,
+                "DisplayName": "手机",
+                "DataType": 1,
+                "DataLength": 11
+              },
+              {
+                "ID": 7,
+                "Name": "birthday",
+                "OrderNo": 7,
+                "DisplayName": "生日",
+                "DataType": 1,
+                "DataLength": 200
+              },
+              {
+                "ID": 8,
+                "Name": "gender",
+                "OrderNo": 8,
+                "DisplayName": "性别",
+                "DataType": 1,
+                "DataLength": 20
+              },
+              {
+                "ID": 9,
+                "Name": "address",
+                "OrderNo": 9,
+                "DisplayName": "地址",
+                "DataType": 1,
+                "DataLength": 20
+              },
+              {
+                "ID": 10,
+                "Name": "employment_date",
+                "OrderNo": 10,
+                "DisplayName": "入职日期",
+                "DataType": 1,
+                "DataLength": 200
+              },
+              {
+                "ID": 11,
+                "Name": "graduation_date",
+                "OrderNo": 11,
+                "DisplayName": "毕业时间",
+                "DataType": 1,
+                "DataLength": 200
+              },
+              {
+                "ID": 12,
+                "Name": "education",
+                "OrderNo": 12,
+                "DisplayName": "学历",
+                "DataType": 1,
+                "DataLength": 20
+              },
+              {
+                "ID": 13,
+                "Name": "position_type",
+                "OrderNo": 13,
+                "DisplayName": "岗位类别",
+                "DataType": 1,
+                "DataLength": 20
+              },
+              {
+                "ID": 14,
+                "Name": "create_time",
+                "OrderNo": 14,
+                "DisplayName": "创建时间",
+                "DataType": 4,
+                "DefaultValue": "CURRENT_TIMESTAMP",
+                "Not_Nullable": true
+              },
+              {
+                "ID": 15,
+                "Name": "update_time",
+                "OrderNo": 15,
+                "DisplayName": "更新时间",
+                "DataType": 4,
+                "DefaultValue": "CURRENT_TIMESTAMP"
+              },
+              {
+                "ID": 16,
+                "Name": "is_deleted",
+                "Memo": "删除标记（0:不可用 1:可用）",
+                "OrderNo": 16,
+                "DisplayName": "删除标记",
+                "DataType": 1,
+                "DefaultValue": "0",
+                "Not_Nullable": true,
+                "DataLength": 20
+              }
+            ]
+          }
+        },
+        {
+          "Name": "express_courier",
+          "Caption": "快递员表",
+          "OrderNo": 7,
+          "GraphDesc": "Left=1097.25\r\nTop=1367.44\r\nBLeft=548.62\r\nBTop=683.72",
+          "MetaFields": {
+            "Count": 8,
+            "items": [
+              {
+                "ID": 1,
+                "Name": "id",
+                "OrderNo": 1,
+                "DataType": 2,
+                "KeyFieldType": 1,
+                "DefaultValue": "{auto_increment}",
+                "Not_Nullable": true
+              },
+              {
+                "ID": 2,
+                "Name": "emp_id",
+                "OrderNo": 2,
+                "DisplayName": "职员id",
+                "DataType": 2,
+                "KeyFieldType": 3,
+                "RelateTable": "employee_info",
+                "RelateField": "id",
+                "GraphDesc": "P1=1101.69,1410.00\r\nP2=1203.00,1410.00\r\nP3=1203.00,1410.00\r\nP4=1304.25,1410.00\r\nHookP1=101.31,235.92\r\nHookP2=105.75,42.56\r\nMod_OP1=0\r\nMod_OP2=0\r\nMod_CP=0\r\nHorz1=1\r\nHorz2=1"
+              },
+              {
+                "ID": 3,
+                "Name": "org_id",
+                "OrderNo": 3,
+                "DisplayName": "机构id",
+                "DataType": 2
+              },
+              {
+                "ID": 4,
+                "Name": "working_phone",
+                "OrderNo": 4,
+                "DisplayName": "工作电话",
+                "DataType": 1,
+                "DataLength": 20
+              },
+              {
+                "ID": 5,
+                "Name": "express_type",
+                "OrderNo": 5,
+                "DisplayName": "快递类型",
+                "DataType": 1,
+                "DataLength": 10
+              },
+              {
+                "ID": 6,
+                "Name": "create_time",
+                "OrderNo": 6,
+                "DisplayName": "创建时间",
+                "DataType": 4,
+                "DefaultValue": "CURRENT_TIMESTAMP",
+                "Not_Nullable": true
+              },
+              {
+                "ID": 7,
+                "Name": "update_time",
+                "OrderNo": 7,
+                "DisplayName": "更新时间",
+                "DataType": 4,
+                "DefaultValue": "CURRENT_TIMESTAMP"
+              },
+              {
+                "ID": 8,
+                "Name": "is_deleted",
+                "Memo": "删除标记（0:不可用 1:可用）",
+                "OrderNo": 8,
+                "DisplayName": "删除标记",
+                "DataType": 1,
+                "DefaultValue": "0",
+                "Not_Nullable": true,
+                "DataLength": 20
+              }
+            ]
+          }
+        },
+        {
+          "Name": "express_courier_complex",
+          "OrderNo": 8,
+          "GraphDesc": "Left=1497.63\r\nTop=1374.93\r\nBLeft=748.82\r\nBTop=687.46",
+          "MetaFields": {
+            "Count": 6,
+            "items": [
+              {
+                "ID": 1,
+                "Name": "id",
+                "OrderNo": 1,
+                "DataType": 2,
+                "KeyFieldType": 1,
+                "DefaultValue": "{auto_increment}",
+                "Not_Nullable": true
+              },
+              {
+                "ID": 2,
+                "Name": "courier_emp_id",
+                "OrderNo": 2,
+                "DisplayName": "快递员id",
+                "DataType": 2,
+                "KeyFieldType": 3,
+                "RelateTable": "express_courier",
+                "RelateField": "emp_id",
+                "GraphDesc": "P1=1304.25,1466.00\r\nP2=1401.00,1466.00\r\nP3=1401.00,1466.00\r\nP4=1497.63,1466.00\r\nHookP1=178.75,98.56\r\nHookP2=20.37,91.07\r\nMod_OP1=0\r\nMod_OP2=0\r\nMod_CP=0\r\nHorz1=1\r\nHorz2=1"
+              },
+              {
+                "ID": 3,
+                "Name": "complex_id",
+                "OrderNo": 3,
+                "DisplayName": "小区",
+                "DataType": 2,
+                "KeyFieldType": 3,
+                "RelateTable": "base_complex",
+                "RelateField": "id",
+                "IndexType": 2,
+                "GraphDesc": "P1=1629.00,1344.85\r\nP2=1629.00,1360.00\r\nP3=1629.00,1360.00\r\nP4=1629.00,1374.93\r\nHookP1=82.48,146.15\r\nHookP2=131.37,28.07\r\nMod_OP1=0\r\nMod_OP2=0\r\nMod_CP=0\r\nHorz1=0\r\nHorz2=0"
+              },
+              {
+                "ID": 4,
+                "Name": "create_time",
+                "OrderNo": 4,
+                "DataType": 4
+              },
+              {
+                "ID": 5,
+                "Name": "update_time",
+                "OrderNo": 5,
+                "DataType": 4
+              },
+              {
+                "ID": 6,
+                "Name": "is_deleted",
+                "OrderNo": 6,
+                "DataType": 1,
+                "DataLength": 20
+              }
+            ]
+          }
+        },
+        {
+          "Name": "express_task_collect",
+          "Caption": "取件",
+          "Memo": "取件、派件任务信息表",
+          "OrderNo": 9,
+          "GraphDesc": "Left=577.56\r\nTop=1177.54\r\nBLeft=288.78\r\nBTop=588.77",
+          "MetaFields": {
+            "Count": 16,
+            "items": [
+              {
+                "ID": 1,
+                "Name": "id",
+                "OrderNo": 1,
+                "DataType": 2,
+                "KeyFieldType": 1,
+                "DefaultValue": "{auto_increment}",
+                "Not_Nullable": true
+              },
+              {
+                "ID": 2,
+                "Name": "order_id",
+                "OrderNo": 2,
+                "DisplayName": "订单id",
+                "DataType": 2,
+                "KeyFieldType": 3,
+                "RelateTable": "order_info",
+                "RelateField": "id",
+                "DefaultValue": "0",
+                "Not_Nullable": true,
+                "GraphDesc": "P1=708.44,1310.00\r\nP2=643.00,1310.00\r\nP3=643.00,1310.00\r\nP4=577.56,1310.00\r\nHookP1=215.56,352.63\r\nHookP2=65.44,132.46\r\nMod_OP1=0\r\nMod_OP2=0\r\nMod_CP=0\r\nHorz1=1\r\nHorz2=1"
+              },
+              {
+                "ID": 3,
+                "Name": "status",
+                "Memo": "任务状态，1为待执行（对应 待上门和须交接）、2 进行中 3已揽收 ， 4为已完成、5为已取消  ",
+                "OrderNo": 3,
+                "DisplayName": "任务状态",
+                "DataType": 1,
+                "DataLength": 20
+              },
+              {
+                "ID": 4,
+                "Name": "org_id",
+                "OrderNo": 4,
+                "DisplayName": "网点ID",
+                "DataType": 2,
+                "DefaultValue": "0",
+                "Not_Nullable": true
+              },
+              {
+                "ID": 5,
+                "Name": "org_name",
+                "OrderNo": 5,
+                "DisplayName": "网点名称",
+                "DataType": 1,
+                "DataLength": 30
+              },
+              {
+                "ID": 6,
+                "Name": "courier_emp_id",
+                "OrderNo": 6,
+                "DisplayName": "快递员ID",
+                "DataType": 2,
+                "KeyFieldType": 3,
+                "RelateTable": "express_courier",
+                "RelateField": "emp_id",
+                "GraphDesc": "P1=1097.25,1417.00\r\nP2=985.00,1417.00\r\nP3=985.00,1417.00\r\nP4=873.56,1417.00\r\nHookP1=35.75,49.56\r\nHookP2=268.44,239.46\r\nMod_OP1=0\r\nMod_OP2=0\r\nMod_CP=0\r\nHorz1=1\r\nHorz2=1"
+              },
+              {
+                "ID": 7,
+                "Name": "courier_name",
+                "OrderNo": 7,
+                "DisplayName": "快递员名称",
+                "DataType": 1,
+                "DataLength": 30
+              },
+              {
+                "ID": 8,
+                "Name": "estimated_collected_time",
+                "OrderNo": 8,
+                "DisplayName": "预计揽收时间",
+                "DataType": 4
+              },
+              {
+                "ID": 9,
+                "Name": "estimated_commit_time",
+                "OrderNo": 9,
+                "DisplayName": "预计揽收时间",
+                "DataType": 4
+              },
+              {
+                "ID": 10,
+                "Name": "actual_collected_time",
+                "OrderNo": 10,
+                "DisplayName": "实际揽收时间",
+                "DataType": 4
+              },
+              {
+                "ID": 11,
+                "Name": "actual_commit_time",
+                "OrderNo": 11,
+                "DisplayName": "实际提交时间",
+                "DataType": 4
+              },
+              {
+                "ID": 12,
+                "Name": "cancel_time",
+                "OrderNo": 12,
+                "DisplayName": "取消时间",
+                "DataType": 4
+              },
+              {
+                "ID": 13,
+                "Name": "remark",
+                "OrderNo": 13,
+                "DisplayName": "备注",
+                "DataType": 1,
+                "DataLength": 50
+              },
+              {
+                "ID": 14,
+                "Name": "create_time",
+                "OrderNo": 14,
+                "DisplayName": "创建时间",
+                "DataType": 4,
+                "Not_Nullable": true
+              },
+              {
+                "ID": 15,
+                "Name": "update_time",
+                "OrderNo": 15,
+                "DisplayName": "更新时间",
+                "DataType": 4
+              },
+              {
+                "ID": 16,
+                "Name": "is_deleted",
+                "Memo": "删除标记（0:不可用 1:可用）",
+                "OrderNo": 16,
+                "DisplayName": "删除标记",
+                "DataType": 1,
+                "DefaultValue": "0",
+                "Not_Nullable": true,
+                "DataLength": 20
+              }
+            ]
+          }
+        },
+        {
+          "Name": "express_task_delivery",
+          "Caption": "取件",
+          "Memo": "取件、派件任务信息表",
+          "OrderNo": 10,
+          "GraphDesc": "Left=334.87\r\nTop=1350.85\r\nBLeft=167.44\r\nBTop=675.42",
+          "MetaFields": {
+            "Count": 14,
+            "items": [
+              {
+                "ID": 1,
+                "Name": "id",
+                "OrderNo": 1,
+                "DataType": 2,
+                "KeyFieldType": 1,
+                "DefaultValue": "{auto_increment}",
+                "Not_Nullable": true
+              },
+              {
+                "ID": 2,
+                "Name": "order_id",
+                "OrderNo": 2,
+                "DisplayName": "订单id",
+                "DataType": 2,
+                "KeyFieldType": 3,
+                "RelateTable": "order_info",
+                "RelateField": "id",
+                "DefaultValue": "0",
+                "Not_Nullable": true,
+                "GraphDesc": "P1=427.44,1397.00\r\nP2=511.00,1397.00\r\nP3=511.00,1493.00\r\nP4=593.87,1493.00\r\nHookP1=83.56,439.63\r\nHookP2=176.13,142.15\r\nMod_OP1=0\r\nMod_OP2=0\r\nMod_CP=0\r\nHorz1=1\r\nHorz2=1"
+              },
+              {
+                "ID": 3,
+                "Name": "status",
+                "OrderNo": 3,
+                "DisplayName": "任务状态",
+                "DataType": 1,
+                "DataLength": 20
+              },
+              {
+                "ID": 4,
+                "Name": "org_id",
+                "OrderNo": 4,
+                "DisplayName": "网点ID",
+                "DataType": 2,
+                "DefaultValue": "0",
+                "Not_Nullable": true
+              },
+              {
+                "ID": 5,
+                "Name": "org_name",
+                "OrderNo": 5,
+                "DisplayName": "网点名称",
+                "DataType": 1,
+                "DataLength": 30
+              },
+              {
+                "ID": 6,
+                "Name": "courier_emp_id",
+                "OrderNo": 6,
+                "DisplayName": "快递员ID",
+                "DataType": 2
+              },
+              {
+                "ID": 7,
+                "Name": "courier_name",
+                "OrderNo": 7,
+                "DisplayName": "快递员名称",
+                "DataType": 1,
+                "DataLength": 30
+              },
+              {
+                "ID": 8,
+                "Name": "estimated_end_time",
+                "OrderNo": 8,
+                "DisplayName": "预计完成时间",
+                "DataType": 4
+              },
+              {
+                "ID": 9,
+                "Name": "start_delivery_time",
+                "OrderNo": 9,
+                "DisplayName": "实际开始时间",
+                "DataType": 4
+              },
+              {
+                "ID": 10,
+                "Name": "delivered_time",
+                "OrderNo": 10,
+                "DisplayName": "完成时间",
+                "DataType": 4
+              },
+              {
+                "ID": 11,
+                "Name": "is_rejected",
+                "OrderNo": 11,
+                "DisplayName": "是否拒收运货",
+                "DataType": 1,
+                "DataLength": 2
+              },
+              {
+                "ID": 12,
+                "Name": "create_time",
+                "OrderNo": 12,
+                "DisplayName": "创建时间",
+                "DataType": 4,
+                "Not_Nullable": true
+              },
+              {
+                "ID": 13,
+                "Name": "update_time",
+                "OrderNo": 13,
+                "DisplayName": "更新时间",
+                "DataType": 4
+              },
+              {
+                "ID": 14,
+                "Name": "is_deleted",
+                "Memo": "删除标记（0:不可用 1:可用）",
+                "OrderNo": 14,
+                "DisplayName": "删除标记",
+                "DataType": 1,
+                "DefaultValue": "0",
+                "Not_Nullable": true,
+                "DataLength": 20
+              }
+            ]
+          }
+        },
+        {
+          "Name": "line_base_info",
+          "Caption": "线路基本表",
+          "OrderNo": 11,
+          "GraphDesc": "Left=911.26\r\nTop=557.60\r\nBLeft=455.63\r\nBTop=278.80",
+          "MetaFields": {
+            "Count": 18,
+            "items": [
+              {
+                "ID": 1,
+                "Name": "id",
+                "OrderNo": 1,
+                "DataType": 2,
+                "KeyFieldType": 1,
+                "DefaultValue": "{auto_increment}",
+                "Not_Nullable": true
+              },
+              {
+                "ID": 2,
+                "Name": "name",
+                "OrderNo": 2,
+                "DataType": 1,
+                "DataLength": 50
+              },
+              {
+                "ID": 3,
+                "Name": "line_no",
+                "OrderNo": 3,
+                "DisplayName": "线路编号",
+                "DataType": 1,
+                "DataLength": 50
+              },
+              {
+                "ID": 4,
+                "Name": "line_level",
+                "OrderNo": 4,
+                "DisplayName": "级别",
+                "DataType": 1,
+                "DataLength": 50
+              },
+              {
+                "ID": 5,
+                "Name": "org_id",
+                "OrderNo": 5,
+                "DisplayName": "所属机构",
+                "DataType": 2,
+                "KeyFieldType": 3,
+                "RelateTable": "base_organ",
+                "RelateField": "id",
+                "GraphDesc": "P1=1294.78,618.00\r\nP2=1251.00,618.00\r\nP3=1251.00,618.00\r\nP4=1207.26,618.00\r\nHookP1=28.22,105.29\r\nHookP2=275.74,60.40\r\nMod_OP1=0\r\nMod_OP2=0\r\nMod_CP=0\r\nHorz1=1\r\nHorz2=1"
+              },
+              {
+                "ID": 6,
+                "Name": "transport_line_type_id",
+                "OrderNo": 6,
+                "DisplayName": "线路类型",
+                "DataType": 1,
+                "DataLength": 20
+              },
+              {
+                "ID": 7,
+                "Name": "start_org_id",
+                "OrderNo": 7,
+                "DisplayName": "起始地机构id",
+                "DataType": 2
+              },
+              {
+                "ID": 8,
+                "Name": "start_org_name",
+                "OrderNo": 8,
+                "DataType": 1,
+                "DataLength": 30
+              },
+              {
+                "ID": 9,
+                "Name": "end_org_id",
+                "OrderNo": 9,
+                "DataType": 2
+              },
+              {
+                "ID": 10,
+                "Name": "end_org_name",
+                "OrderNo": 10,
+                "DataType": 1,
+                "DataLength": 30
+              },
+              {
+                "ID": 11,
+                "Name": "pair_line_id",
+                "OrderNo": 11,
+                "DisplayName": "一来一回的路线",
+                "DataType": 2
+              },
+              {
+                "ID": 12,
+                "Name": "distance",
+                "OrderNo": 12,
+                "DataType": 3,
+                "DataLength": 10,
+                "DataScale": 2
+              },
+              {
+                "ID": 13,
+                "Name": "cost",
+                "OrderNo": 13,
+                "DataType": 3,
+                "DataLength": 10,
+                "DataScale": 2
+              },
+              {
+                "ID": 14,
+                "Name": "estimated_time",
+                "Memo": "预计时间（分钟）",
+                "OrderNo": 14,
+                "DisplayName": "预计时间",
+                "DataType": 2
+              },
+              {
+                "ID": 15,
+                "Name": "status",
+                "Memo": "状态 0：禁用 1：正常",
+                "OrderNo": 15,
+                "DisplayName": "状态",
+                "DataType": 1,
+                "DefaultValue": "1",
+                "Not_Nullable": true,
+                "DataLength": 20
+              },
+              {
+                "ID": 16,
+                "Name": "create_time",
+                "OrderNo": 16,
+                "DisplayName": "创建时间",
+                "DataType": 4,
+                "Not_Nullable": true
+              },
+              {
+                "ID": 17,
+                "Name": "update_time",
+                "OrderNo": 17,
+                "DisplayName": "更新时间",
+                "DataType": 4
+              },
+              {
+                "ID": 18,
+                "Name": "is_deleted",
+                "Memo": "删除标记（0:不可用 1:可用）",
+                "OrderNo": 18,
+                "DisplayName": "删除标记",
+                "DataType": 1,
+                "DefaultValue": "0",
+                "Not_Nullable": true,
+                "DataLength": 20
+              }
+            ]
+          }
+        },
+        {
+          "Name": "line_base_shift",
+          "Caption": "线路基本表",
+          "OrderNo": 12,
+          "GraphDesc": "Left=1102.70\r\nTop=307.89\r\nBLeft=551.35\r\nBTop=153.94",
+          "MetaFields": {
+            "Count": 11,
+            "items": [
+              {
+                "ID": 1,
+                "Name": "id",
+                "OrderNo": 1,
+                "DataType": 2,
+                "KeyFieldType": 1,
+                "DefaultValue": "{auto_increment}",
+                "Not_Nullable": true
+              },
+              {
+                "ID": 2,
+                "Name": "line_id",
+                "OrderNo": 2,
+                "DisplayName": "线路id",
+                "DataType": 2,
+                "KeyFieldType": 3,
+                "RelateTable": "line_base_info",
+                "RelateField": "id",
+                "GraphDesc": "P1=1155.00,557.60\r\nP2=1155.00,532.00\r\nP3=1155.00,532.00\r\nP4=1155.00,505.89\r\nHookP1=243.74,28.40\r\nHookP2=52.30,178.11\r\nMod_OP1=0\r\nMod_OP2=0\r\nMod_CP=0\r\nHorz1=0\r\nHorz2=0"
+              },
+              {
+                "ID": 3,
+                "Name": "start_time",
+                "OrderNo": 3,
+                "DisplayName": "班次开始时间",
+                "DataType": 1,
+                "DataLength": 30
+              },
+              {
+                "ID": 4,
+                "Name": "driver1_emp_id",
+                "OrderNo": 4,
+                "DisplayName": "第一司机",
+                "DataType": 2
+              },
+              {
+                "ID": 5,
+                "Name": "driver2_emp_id",
+                "OrderNo": 5,
+                "DisplayName": "第二司机",
+                "DataType": 2
+              },
+              {
+                "ID": 6,
+                "Name": "truck_id",
+                "OrderNo": 6,
+                "DisplayName": "卡车",
+                "DataType": 2,
+                "KeyFieldType": 3,
+                "RelateTable": "truck_info",
+                "RelateField": "id",
+                "GraphDesc": "P1=1008.00,292.03\r\nP2=1008.00,336.00\r\nP3=1008.00,336.00\r\nP4=1102.70,336.00\r\nHookP1=282.77,225.97\r\nHookP2=28.30,28.11\r\nMod_OP1=0\r\nMod_OP2=0\r\nMod_CP=0\r\nHorz1=0\r\nHorz2=1"
+              },
+              {
+                "ID": 7,
+                "Name": "pair_shift_id",
+                "Memo": "配对班次(同一辆车一去一回的另一班次)",
+                "OrderNo": 7,
+                "DisplayName": "配对班次",
+                "DataType": 2
+              },
+              {
+                "ID": 8,
+                "Name": "is_enabled",
+                "Memo": "状态 0：禁用 1：正常",
+                "OrderNo": 8,
+                "DisplayName": "状态",
+                "DataType": 1,
+                "DefaultValue": "1",
+                "Not_Nullable": true,
+                "DataLength": 20
+              },
+              {
+                "ID": 9,
+                "Name": "create_time",
+                "OrderNo": 9,
+                "DisplayName": "创建时间",
+                "DataType": 4,
+                "DefaultValue": "CURRENT_TIMESTAMP",
+                "Not_Nullable": true
+              },
+              {
+                "ID": 10,
+                "Name": "update_time",
+                "OrderNo": 10,
+                "DisplayName": "更新时间",
+                "DataType": 4,
+                "DefaultValue": "CURRENT_TIMESTAMP"
+              },
+              {
+                "ID": 11,
+                "Name": "is_deleted",
+                "Memo": "删除标记（0:不可用 1:可用）",
+                "OrderNo": 11,
+                "DisplayName": "删除标记",
+                "DataType": 1,
+                "DefaultValue": "0",
+                "Not_Nullable": true,
+                "DataLength": 20
+              }
+            ]
+          }
+        },
+        {
+          "Name": "order_cargo",
+          "Caption": "订单明细",
+          "OrderNo": 13,
+          "GraphDesc": "Left=815.40\r\nTop=1060.13\r\nBLeft=407.70\r\nBTop=530.06",
+          "MetaFields": {
+            "Count": 11,
+            "items": [
+              {
+                "ID": 1,
+                "Name": "id",
+                "OrderNo": 1,
+                "DataType": 2,
+                "KeyFieldType": 1,
+                "DefaultValue": "{auto_increment}",
+                "Not_Nullable": true
+              },
+              {
+                "ID": 2,
+                "Name": "order_id",
+                "OrderNo": 2,
+                "DisplayName": "订单id",
+                "DataType": 1,
+                "KeyFieldType": 3,
+                "RelateTable": "order_info",
+                "RelateField": "id",
+                "Not_Nullable": true,
+                "DataLength": 20,
+                "GraphDesc": "P1=708.44,1159.00\r\nP2=762.00,1159.00\r\nP3=762.00,1159.00\r\nP4=815.40,1159.00\r\nHookP1=244.56,201.63\r\nHookP2=19.60,98.87\r\nMod_OP1=0\r\nMod_OP2=0\r\nMod_CP=0\r\nHorz1=1\r\nHorz2=1"
+              },
+              {
+                "ID": 3,
+                "Name": "cargo_type",
+                "OrderNo": 3,
+                "DisplayName": "货物类型id",
+                "DataType": 1,
+                "Not_Nullable": true,
+                "DataLength": 20
+              },
+              {
+                "ID": 4,
+                "Name": "volume_length",
+                "OrderNo": 4,
+                "DisplayName": "长cm",
+                "DataType": 2
+              },
+              {
+                "ID": 5,
+                "Name": "volume_width",
+                "OrderNo": 5,
+                "DisplayName": "宽cm",
+                "DataType": 2
+              },
+              {
+                "ID": 6,
+                "Name": "volume_height",
+                "OrderNo": 6,
+                "DisplayName": "高cm",
+                "DataType": 2
+              },
+              {
+                "ID": 7,
+                "Name": "weight",
+                "Memo": "重量 kg",
+                "OrderNo": 7,
+                "DisplayName": "重量",
+                "DataType": 3,
+                "DataLength": 16,
+                "DataScale": 2
+              },
+              {
+                "ID": 8,
+                "Name": "remark",
+                "OrderNo": 8,
+                "DisplayName": "备注",
+                "DataType": 1,
+                "DataLength": 99999
+              },
+              {
+                "ID": 9,
+                "Name": "create_time",
+                "OrderNo": 9,
+                "DisplayName": "创建时间",
+                "DataType": 4,
+                "Not_Nullable": true
+              },
+              {
+                "ID": 10,
+                "Name": "update_time",
+                "OrderNo": 10,
+                "DisplayName": "更新时间",
+                "DataType": 4
+              },
+              {
+                "ID": 11,
+                "Name": "is_deleted",
+                "Memo": "删除标记（0:不可用 1:可用）",
+                "OrderNo": 11,
+                "DisplayName": "删除标记",
+                "DataType": 1,
+                "DefaultValue": "0",
+                "Not_Nullable": true,
+                "DataLength": 20
+              }
+            ]
+          }
+        },
+        {
+          "Name": "order_info",
+          "Caption": "物流单表",
+          "OrderNo": 14,
+          "GraphDesc": "Left=427.44\r\nTop=957.37\r\nBLeft=213.72\r\nBTop=478.68",
+          "MetaFields": {
+            "Count": 29,
+            "items": [
+              {
+                "ID": 1,
+                "Name": "id",
+                "OrderNo": 1,
+                "DisplayName": "id",
+                "DataType": 2,
+                "KeyFieldType": 1,
+                "DefaultValue": "{auto_increment}",
+                "Not_Nullable": true
+              },
+              {
+                "ID": 2,
+                "Name": "order_no",
+                "OrderNo": 2,
+                "DisplayName": "订单号",
+                "DataType": 1,
+                "Not_Nullable": true,
+                "DataLength": 50
+              },
+              {
+                "ID": 3,
+                "Name": "status",
+                "OrderNo": 3,
+                "DisplayName": "订单状态",
+                "DataType": 1,
+                "DataLength": 20
+              },
+              {
+                "ID": 4,
+                "Name": "collect_type",
+                "Memo": "取件类型，1为网点自寄，2为上门取件",
+                "OrderNo": 4,
+                "DisplayName": "取件类型",
+                "DataType": 1,
+                "DefaultValue": "0",
+                "Not_Nullable": true,
+                "DataLength": 10
+              },
+              {
+                "ID": 5,
+                "Name": "user_id",
+                "OrderNo": 5,
+                "DisplayName": "客户id",
+                "DataType": 2,
+                "KeyFieldType": 3,
+                "RelateTable": "user_info",
+                "RelateField": "id",
+                "GraphDesc": "P1=276.98,1303.00\r\nP2=352.00,1303.00\r\nP3=352.00,1303.00\r\nP4=427.44,1303.00\r\nHookP1=180.02,123.22\r\nHookP2=43.56,345.63\r\nMod_OP1=0\r\nMod_OP2=0\r\nMod_CP=0\r\nHorz1=1\r\nHorz2=1"
+              },
+              {
+                "ID": 6,
+                "Name": "receiver_complex_id",
+                "OrderNo": 6,
+                "DisplayName": "收件人小区id",
+                "DataType": 2
+              },
+              {
+                "ID": 7,
+                "Name": "receiver_province_id",
+                "OrderNo": 7,
+                "DisplayName": "收件人省份id",
+                "DataType": 1,
+                "DataLength": 20
+              },
+              {
+                "ID": 8,
+                "Name": "receiver_city_id",
+                "OrderNo": 8,
+                "DisplayName": "收件人城市id",
+                "DataType": 1,
+                "Not_Nullable": true,
+                "DataLength": 20
+              },
+              {
+                "ID": 9,
+                "Name": "receiver_district_id",
+                "OrderNo": 9,
+                "DisplayName": "收件人区县id",
+                "DataType": 1,
+                "DataLength": 20
+              },
+              {
+                "ID": 10,
+                "Name": "receiver_address",
+                "OrderNo": 10,
+                "DisplayName": "收件人详细地址",
+                "DataType": 1,
+                "DataLength": 255
+              },
+              {
+                "ID": 11,
+                "Name": "receiver_name",
+                "OrderNo": 11,
+                "DisplayName": "收件人姓名",
+                "DataType": 1,
+                "DataLength": 255
+              },
+              {
+                "ID": 12,
+                "Name": "receiver_phone",
+                "OrderNo": 12,
+                "DisplayName": "收件人电话",
+                "DataType": 1,
+                "DataLength": 255
+              },
+              {
+                "ID": 13,
+                "Name": "receive_location",
+                "OrderNo": 13,
+                "DisplayName": "起始点经纬度",
+                "DataType": 1,
+                "DataLength": 30
+              },
+              {
+                "ID": 14,
+                "Name": "sender_complex_id",
+                "OrderNo": 14,
+                "DisplayName": "发件人小区id",
+                "DataType": 2
+              },
+              {
+                "ID": 15,
+                "Name": "sender_province_id",
+                "OrderNo": 15,
+                "DisplayName": "发件人省份id",
+                "DataType": 1,
+                "DataLength": 20
+              },
+              {
+                "ID": 16,
+                "Name": "sender_city_id",
+                "OrderNo": 16,
+                "DisplayName": "发件人城市id",
+                "DataType": 1,
+                "DataLength": 20
+              },
+              {
+                "ID": 17,
+                "Name": "sender_district_id",
+                "OrderNo": 17,
+                "DisplayName": "发件人区县id",
+                "DataType": 1,
+                "DataLength": 20
+              },
+              {
+                "ID": 18,
+                "Name": "sender_address",
+                "OrderNo": 18,
+                "DisplayName": "发件人详细地址",
+                "DataType": 1,
+                "DataLength": 255
+              },
+              {
+                "ID": 19,
+                "Name": "sender_name",
+                "OrderNo": 19,
+                "DisplayName": "发件人姓名",
+                "DataType": 1,
+                "DataLength": 255
+              },
+              {
+                "ID": 20,
+                "Name": "sender_phone",
+                "OrderNo": 20,
+                "DisplayName": "发件人电话",
+                "DataType": 1,
+                "DataLength": 255
+              },
+              {
+                "ID": 21,
+                "Name": "send_location",
+                "OrderNo": 21,
+                "DisplayName": "发件人坐标",
+                "DataType": 1,
+                "DataLength": 30
+              },
+              {
+                "ID": 22,
+                "Name": "payment_type",
+                "OrderNo": 22,
+                "DisplayName": "支付方式",
+                "DataType": 1,
+                "DataLength": 10
+              },
+              {
+                "ID": 23,
+                "Name": "cargo_num",
+                "OrderNo": 23,
+                "DisplayName": "货物个数",
+                "DataType": 2
+              },
+              {
+                "ID": 24,
+                "Name": "amount",
+                "OrderNo": 24,
+                "DisplayName": "金额",
+                "DataType": 3,
+                "DataLength": 32,
+                "DataScale": 2
+              },
+              {
+                "ID": 25,
+                "Name": "estimate_arrive_time",
+                "OrderNo": 25,
+                "DisplayName": "预计到达时间",
+                "DataType": 4
+              },
+              {
+                "ID": 26,
+                "Name": "distance",
+                "Memo": "距离，单位：公里",
+                "OrderNo": 26,
+                "DisplayName": "距离",
+                "DataType": 3,
+                "DataLength": 10,
+                "DataScale": 2
+              },
+              {
+                "ID": 27,
+                "Name": "create_time",
+                "OrderNo": 27,
+                "DisplayName": "创建时间",
+                "DataType": 4,
+                "Not_Nullable": true
+              },
+              {
+                "ID": 28,
+                "Name": "update_time",
+                "OrderNo": 28,
+                "DisplayName": "更新时间",
+                "DataType": 4
+              },
+              {
+                "ID": 29,
+                "Name": "is_deleted",
+                "Memo": "删除标记（0:不可用 1:可用）",
+                "OrderNo": 29,
+                "DisplayName": "删除标记",
+                "DataType": 1,
+                "DefaultValue": "0",
+                "Not_Nullable": true,
+                "DataLength": 20
+              }
+            ]
+          }
+        },
+        {
+          "Name": "order_org_bound",
+          "OrderNo": 15,
+          "GraphDesc": "Left=1498.05\r\nTop=286.47\r\nBLeft=749.02\r\nBTop=143.23",
+          "MetaFields": {
+            "Count": 13,
+            "items": [
+              {
+                "ID": 1,
+                "Name": "id",
+                "OrderNo": 1,
+                "DataType": 2,
+                "KeyFieldType": 1,
+                "DefaultValue": "{auto_increment}",
+                "Not_Nullable": true
+              },
+              {
+                "ID": 2,
+                "Name": "order_id",
+                "OrderNo": 2,
+                "DisplayName": "订单主键",
+                "DataType": 2
+              },
+              {
+                "ID": 3,
+                "Name": "org_id",
+                "OrderNo": 3,
+                "DisplayName": "机构id",
+                "DataType": 2,
+                "KeyFieldType": 3,
+                "RelateTable": "base_organ",
+                "RelateField": "id",
+                "GraphDesc": "P1=1619.78,549.00\r\nP2=1559.00,549.00\r\nP3=1559.00,496.00\r\nP4=1498.05,496.00\r\nHookP1=264.22,36.29\r\nHookP2=60.95,209.53\r\nMod_OP1=0\r\nMod_OP2=0\r\nMod_CP=0\r\nHorz1=1\r\nHorz2=1"
+              },
+              {
+                "ID": 4,
+                "Name": "status",
+                "Memo": "状态 出库 入库",
+                "OrderNo": 4,
+                "DisplayName": "状态",
+                "DataType": 1,
+                "DataLength": 10
+              },
+              {
+                "ID": 5,
+                "Name": "inbound_time",
+                "OrderNo": 5,
+                "DisplayName": "入库时间",
+                "DataType": 4
+              },
+              {
+                "ID": 6,
+                "Name": "inbound_emp_id",
+                "OrderNo": 6,
+                "DisplayName": "入库人员",
+                "DataType": 2
+              },
+              {
+                "ID": 7,
+                "Name": "sort_time",
+                "OrderNo": 7,
+                "DisplayName": "分拣时间",
+                "DataType": 4
+              },
+              {
+                "ID": 8,
+                "Name": "sorter_emp_id",
+                "OrderNo": 8,
+                "DisplayName": "分拣人员",
+                "DataType": 2
+              },
+              {
+                "ID": 9,
+                "Name": "outbound_time",
+                "OrderNo": 9,
+                "DisplayName": "出库时间",
+                "DataType": 4
+              },
+              {
+                "ID": 10,
+                "Name": "outbound_emp_id",
+                "OrderNo": 10,
+                "DisplayName": "出库人员",
+                "DataType": 2
+              },
+              {
+                "ID": 11,
+                "Name": "create_time",
+                "OrderNo": 11,
+                "DisplayName": "创建时间",
+                "DataType": 4
+              },
+              {
+                "ID": 12,
+                "Name": "update_time",
+                "OrderNo": 12,
+                "DisplayName": "修改时间",
+                "DataType": 4
+              },
+              {
+                "ID": 13,
+                "Name": "is_deleted",
+                "OrderNo": 13,
+                "DisplayName": "删除标志",
+                "DataType": 1,
+                "DataLength": 2
+              }
+            ]
+          }
+        },
+        {
+          "Name": "order_trace_log",
+          "Caption": "物流单追踪信息",
+          "OrderNo": 16,
+          "GraphDesc": "Left=796.39\r\nTop=795.53\r\nBLeft=398.20\r\nBTop=397.77",
+          "MetaFields": {
+            "Count": 11,
+            "items": [
+              {
+                "ID": 1,
+                "Name": "id",
+                "OrderNo": 1,
+                "DataType": 2,
+                "KeyFieldType": 1,
+                "DefaultValue": "{auto_increment}",
+                "Not_Nullable": true
+              },
+              {
+                "ID": 2,
+                "Name": "order_id",
+                "OrderNo": 2,
+                "DisplayName": "订单编号",
+                "DataType": 2,
+                "KeyFieldType": 3,
+                "RelateTable": "order_info",
+                "RelateField": "id",
+                "GraphDesc": "P1=708.44,1009.00\r\nP2=752.00,1009.00\r\nP3=752.00,974.00\r\nP4=796.39,974.00\r\nHookP1=228.56,51.63\r\nHookP2=19.61,178.47\r\nMod_OP1=0\r\nMod_OP2=0\r\nMod_CP=0\r\nHorz1=1\r\nHorz2=1"
+              },
+              {
+                "ID": 3,
+                "Name": "trace_desc",
+                "OrderNo": 3,
+                "DisplayName": "进度描述",
+                "DataType": 1,
+                "DefaultValue": "0",
+                "Not_Nullable": true,
+                "DataLength": 500
+              },
+              {
+                "ID": 4,
+                "Name": "create_time",
+                "OrderNo": 4,
+                "DisplayName": "创建时间",
+                "DataType": 4
+              },
+              {
+                "ID": 5,
+                "Name": "cur_task_id",
+                "OrderNo": 5,
+                "DisplayName": "来源快递任务id",
+                "DataType": 2,
+                "DefaultValue": "0"
+              },
+              {
+                "ID": 6,
+                "Name": "task_type",
+                "Memo": "任务类型:1  揽收 2 运输 3 中转 4派送 ",
+                "OrderNo": 6,
+                "DisplayName": "任务类型",
+                "DataType": 1,
+                "DataLength": 20
+              },
+              {
+                "ID": 7,
+                "Name": "charge_emp_id",
+                "OrderNo": 7,
+                "DisplayName": "负责人id",
+                "DataType": 2,
+                "DefaultValue": "0",
+                "Not_Nullable": true
+              },
+              {
+                "ID": 8,
+                "Name": "remark",
+                "OrderNo": 8,
+                "DisplayName": "备注",
+                "DataType": 1,
+                "DataLength": 500
+              },
+              {
+                "ID": 9,
+                "Name": "is_rollback",
+                "OrderNo": 9,
+                "DisplayName": "是否回退中",
+                "DataType": 1,
+                "DataLength": 20
+              },
+              {
+                "ID": 10,
+                "Name": "update_time",
+                "OrderNo": 10,
+                "DisplayName": "更新时间",
+                "DataType": 4
+              },
+              {
+                "ID": 11,
+                "Name": "is_deleted",
+                "Memo": "删除标记（0:不可用 1:可用）",
+                "OrderNo": 11,
+                "DisplayName": "删除标记",
+                "DataType": 1,
+                "DefaultValue": "0",
+                "Not_Nullable": true,
+                "DataLength": 20
+              }
+            ]
+          }
+        },
+        {
+          "Name": "sorter_info",
+          "Caption": "分拣员",
+          "OrderNo": 17,
+          "GraphDesc": "Left=1191.16\r\nTop=980.66\r\nBLeft=595.58\r\nBTop=490.33",
+          "MetaFields": {
+            "Count": 6,
+            "items": [
+              {
+                "ID": 1,
+                "Name": "id",
+                "OrderNo": 1,
+                "DataType": 2,
+                "KeyFieldType": 1,
+                "DefaultValue": "{auto_increment}",
+                "Not_Nullable": true
+              },
+              {
+                "ID": 2,
+                "Name": "emp_id",
+                "OrderNo": 2,
+                "DisplayName": "职员id",
+                "DataType": 2,
+                "KeyFieldType": 3,
+                "RelateTable": "employee_info",
+                "RelateField": "id",
+                "GraphDesc": "P1=1261.00,1174.08\r\nP2=1261.00,1136.00\r\nP3=1261.00,1136.00\r\nP4=1261.00,1098.66\r\nHookP1=159.31,27.92\r\nHookP2=69.84,98.34\r\nMod_OP1=0\r\nMod_OP2=0\r\nMod_CP=0\r\nHorz1=0\r\nHorz2=0"
+              },
+              {
+                "ID": 3,
+                "Name": "org_id",
+                "OrderNo": 3,
+                "DisplayName": "机构id",
+                "DataType": 2,
+                "KeyFieldType": 3,
+                "RelateTable": "base_region_info",
+                "RelateField": "id",
+                "GraphDesc": "P1=1304.00,953.68\r\nP2=1304.00,967.00\r\nP3=1304.00,967.00\r\nP4=1304.00,980.66\r\nHookP1=78.76,122.32\r\nHookP2=112.84,28.34\r\nMod_OP1=0\r\nMod_OP2=0\r\nMod_CP=0\r\nHorz1=0\r\nHorz2=0"
+              },
+              {
+                "ID": 4,
+                "Name": "create_time",
+                "OrderNo": 4,
+                "DisplayName": "创建时间",
+                "DataType": 4,
+                "Not_Nullable": true
+              },
+              {
+                "ID": 5,
+                "Name": "update_time",
+                "OrderNo": 5,
+                "DisplayName": "更新时间",
+                "DataType": 4
+              },
+              {
+                "ID": 6,
+                "Name": "is_deleted",
+                "Memo": "删除标记（0:不可用 1:可用）",
+                "OrderNo": 6,
+                "DisplayName": "删除标记",
+                "DataType": 1,
+                "DefaultValue": "0",
+                "Not_Nullable": true,
+                "DataLength": 20
+              }
+            ]
+          }
+        },
+        {
+          "Name": "transport_plan_line_detail",
+          "Caption": "运单路线明细表",
+          "OrderNo": 18,
+          "GraphDesc": "Left=392.52\r\nTop=631.20\r\nBLeft=196.26\r\nBTop=315.60",
+          "MetaFields": {
+            "Count": 8,
+            "items": [
+              {
+                "ID": 1,
+                "Name": "id",
+                "OrderNo": 1,
+                "DataType": 2,
+                "KeyFieldType": 1,
+                "DefaultValue": "{auto_increment}",
+                "Not_Nullable": true
+              },
+              {
+                "ID": 2,
+                "Name": "order_id",
+                "OrderNo": 2,
+                "DisplayName": "订单编号",
+                "DataType": 2,
+                "KeyFieldType": 3,
+                "RelateTable": "order_info",
+                "RelateField": "id"
+              },
+              {
+                "ID": 3,
+                "Name": "start_org_id",
+                "OrderNo": 3,
+                "DisplayName": "起始机构",
+                "DataType": 2,
+                "KeyFieldType": 3,
+                "RelateTable": "transport_task",
+                "RelateField": "id"
+              },
+              {
+                "ID": 4,
+                "Name": "end_org_id",
+                "OrderNo": 4,
+                "DisplayName": "终点机构",
+                "DataType": 2
+              },
+              {
+                "ID": 5,
+                "Name": "line_base_id",
+                "OrderNo": 5,
+                "DisplayName": "业务表线路id",
+                "DataType": 2,
+                "KeyFieldType": 3,
+                "RelateTable": "line_base_info",
+                "RelateField": "id"
+              },
+              {
+                "ID": 6,
+                "Name": "create_time",
+                "OrderNo": 6,
+                "DisplayName": "创建时间",
+                "DataType": 4,
+                "Not_Nullable": true
+              },
+              {
+                "ID": 7,
+                "Name": "update_time",
+                "OrderNo": 7,
+                "DisplayName": "更新时间",
+                "DataType": 4
+              },
+              {
+                "ID": 8,
+                "Name": "is_deleted",
+                "Memo": "删除标记（0:不可用 1:可用）",
+                "OrderNo": 8,
+                "DisplayName": "删除标记",
+                "DataType": 1,
+                "DefaultValue": "0",
+                "Not_Nullable": true,
+                "DataLength": 20
+              }
+            ]
+          }
+        },
+        {
+          "Name": "transport_task",
+          "Caption": "运输任务表",
+          "OrderNo": 19,
+          "GraphDesc": "Left=39.78\r\nTop=590.22\r\nBLeft=19.89\r\nBTop=295.11",
+          "MetaFields": {
+            "Count": 21,
+            "items": [
+              {
+                "ID": 1,
+                "Name": "id",
+                "OrderNo": 1,
+                "DataType": 2,
+                "KeyFieldType": 1,
+                "DefaultValue": "{auto_increment}",
+                "Not_Nullable": true
+              },
+              {
+                "ID": 2,
+                "Name": "shift_id",
+                "OrderNo": 2,
+                "DisplayName": "车次id",
+                "DataType": 2,
+                "KeyFieldType": 3,
+                "RelateTable": "line_base_shift",
+                "RelateField": "id",
+                "GraphDesc": "P1=1102.70,470.00\r\nP2=697.00,470.00\r\nP3=697.00,610.00\r\nP4=290.78,610.00\r\nHookP1=36.30,162.11\r\nHookP2=231.22,19.78\r\nMod_OP1=0\r\nMod_OP2=0\r\nMod_CP=0\r\nHorz1=1\r\nHorz2=1"
+              },
+              {
+                "ID": 3,
+                "Name": "line_id",
+                "OrderNo": 3,
+                "DisplayName": "路线id",
+                "DataType": 2
+              },
+              {
+                "ID": 4,
+                "Name": "start_org_id",
+                "OrderNo": 4,
+                "DisplayName": "起始机构id",
+                "DataType": 2,
+                "DefaultValue": "0",
+                "Not_Nullable": true
+              },
+              {
+                "ID": 5,
+                "Name": "start_org_name",
+                "OrderNo": 5,
+                "DisplayName": "起始机构名称",
+                "DataType": 1,
+                "DataLength": 100
+              },
+              {
+                "ID": 6,
+                "Name": "end_org_id",
+                "OrderNo": 6,
+                "DisplayName": "目的机构id",
+                "DataType": 2,
+                "DefaultValue": "0",
+                "Not_Nullable": true
+              },
+              {
+                "ID": 7,
+                "Name": "end_org_name",
+                "OrderNo": 7,
+                "DisplayName": "目的机构名称",
+                "DataType": 1,
+                "DataLength": 100
+              },
+              {
+                "ID": 8,
+                "Name": "status",
+                "OrderNo": 8,
+                "DisplayName": "任务状态",
+                "DataType": 1,
+                "DefaultValue": "0",
+                "Not_Nullable": true,
+                "DataLength": 20
+              },
+              {
+                "ID": 9,
+                "Name": "order_num",
+                "OrderNo": 9,
+                "DisplayName": "运单个数",
+                "DataType": 2
+              },
+              {
+                "ID": 10,
+                "Name": "driver1_emp_id",
+                "OrderNo": 10,
+                "DisplayName": "司机1id",
+                "DataType": 2
+              },
+              {
+                "ID": 11,
+                "Name": "driver1_name",
+                "OrderNo": 11,
+                "DisplayName": "司机1名称",
+                "DataType": 1,
+                "DataLength": 10
+              },
+              {
+                "ID": 12,
+                "Name": "driver2_emp_id",
+                "OrderNo": 12,
+                "DisplayName": "司机2id",
+                "DataType": 2
+              },
+              {
+                "ID": 13,
+                "Name": "driver2_name",
+                "OrderNo": 13,
+                "DisplayName": "司机2名称",
+                "DataType": 1,
+                "DataLength": 10
+              },
+              {
+                "ID": 14,
+                "Name": "truck_id",
+                "OrderNo": 14,
+                "DisplayName": "卡车id",
+                "DataType": 2
+              },
+              {
+                "ID": 15,
+                "Name": "truck_no",
+                "OrderNo": 15,
+                "DisplayName": "卡车号牌",
+                "DataType": 1,
+                "DataLength": 10
+              },
+              {
+                "ID": 16,
+                "Name": "actual_start_time",
+                "OrderNo": 16,
+                "DisplayName": "实际启动时间",
+                "DataType": 4
+              },
+              {
+                "ID": 17,
+                "Name": "actual_end_time",
+                "OrderNo": 17,
+                "DisplayName": "实际到达时间",
+                "DataType": 4
+              },
+              {
+                "ID": 18,
+                "Name": "actual_distance",
+                "OrderNo": 18,
+                "DisplayName": "实际行驶距离",
+                "DataType": 3,
+                "DataLength": 16,
+                "DataScale": 2
+              },
+              {
+                "ID": 19,
+                "Name": "create_time",
+                "OrderNo": 19,
+                "DisplayName": "创建时间",
+                "DataType": 4,
+                "Not_Nullable": true
+              },
+              {
+                "ID": 20,
+                "Name": "update_time",
+                "OrderNo": 20,
+                "DisplayName": "更新时间",
+                "DataType": 4
+              },
+              {
+                "ID": 21,
+                "Name": "is_deleted",
+                "Memo": "删除标记（0:不可用 1:可用）",
+                "OrderNo": 21,
+                "DisplayName": "删除标记",
+                "DataType": 1,
+                "DefaultValue": "0",
+                "Not_Nullable": true,
+                "DataLength": 20
+              }
+            ]
+          }
+        },
+        {
+          "Name": "transport_task_detail",
+          "Caption": "运单与运输任务关联表",
+          "OrderNo": 20,
+          "GraphDesc": "Left=28.94\r\nTop=782.56\r\nBLeft=14.47\r\nBTop=391.28",
+          "MetaFields": {
+            "Count": 7,
+            "items": [
+              {
+                "ID": 1,
+                "Name": "id",
+                "OrderNo": 1,
+                "DataType": 2,
+                "KeyFieldType": 1,
+                "DefaultValue": "{auto_increment}",
+                "Not_Nullable": true
+              },
+              {
+                "ID": 2,
+                "Name": "transport_task_id",
+                "OrderNo": 2,
+                "DisplayName": "运输任务id",
+                "DataType": 2,
+                "KeyFieldType": 3,
+                "RelateTable": "transport_task",
+                "RelateField": "id",
+                "IndexType": 2,
+                "DefaultValue": "0",
+                "Not_Nullable": true
+              },
+              {
+                "ID": 3,
+                "Name": "order_id",
+                "OrderNo": 3,
+                "DisplayName": "运单id",
+                "DataType": 2,
+                "KeyFieldType": 3,
+                "RelateTable": "order_info",
+                "RelateField": "id",
+                "DefaultValue": "0",
+                "Not_Nullable": true
+              },
+              {
+                "ID": 4,
+                "Name": "sorter_emp_id",
+                "OrderNo": 4,
+                "DisplayName": "分拣员id",
+                "DataType": 2,
+                "IndexType": 2
+              },
+              {
+                "ID": 5,
+                "Name": "create_time",
+                "OrderNo": 5,
+                "DisplayName": "创建时间",
+                "DataType": 4,
+                "Not_Nullable": true
+              },
+              {
+                "ID": 6,
+                "Name": "update_time",
+                "OrderNo": 6,
+                "DisplayName": "更新时间",
+                "DataType": 4
+              },
+              {
+                "ID": 7,
+                "Name": "is_deleted",
+                "Memo": "删除标记（0:不可用 1:可用）",
+                "OrderNo": 7,
+                "DisplayName": "删除标记",
+                "DataType": 1,
+                "DefaultValue": "0",
+                "DataLength": 20
+              }
+            ]
+          }
+        },
+        {
+          "Name": "transport_task_process",
+          "OrderNo": 21,
+          "GraphDesc": "Left=33.72\r\nTop=423.09\r\nBLeft=16.86\r\nBTop=211.54",
+          "MetaFields": {
+            "Count": 7,
+            "items": [
+              {
+                "ID": 1,
+                "Name": "id",
+                "OrderNo": 1,
+                "DataType": 2,
+                "KeyFieldType": 1,
+                "DefaultValue": "{auto_increment}",
+                "Not_Nullable": true
+              },
+              {
+                "ID": 2,
+                "Name": "transport_task_id",
+                "OrderNo": 2,
+                "DisplayName": "任务id",
+                "DataType": 2,
+                "KeyFieldType": 3,
+                "RelateTable": "transport_task",
+                "RelateField": "id"
+              },
+              {
+                "ID": 3,
+                "Name": "cur_distance",
+                "OrderNo": 3,
+                "DisplayName": "当前行驶里程",
+                "DataType": 3,
+                "DataLength": 16,
+                "DataScale": 2
+              },
+              {
+                "ID": 4,
+                "Name": "line_distance",
+                "OrderNo": 4,
+                "DisplayName": "里程",
+                "DataType": 3,
+                "DataLength": 16,
+                "DataScale": 2
+              },
+              {
+                "ID": 5,
+                "Name": "create_time",
+                "OrderNo": 5,
+                "DisplayName": "创建时间",
+                "DataType": 4
+              },
+              {
+                "ID": 6,
+                "Name": "update_time",
+                "OrderNo": 6,
+                "DisplayName": "更新时间",
+                "DataType": 4
+              },
+              {
+                "ID": 7,
+                "Name": "is_deleted",
+                "OrderNo": 7,
+                "DataType": 1,
+                "DataLength": 2
+              }
+            ]
+          }
+        },
+        {
+          "Name": "truck_driver",
+          "Caption": "司机驾驶证表",
+          "OrderNo": 22,
+          "GraphDesc": "Left=1480.33\r\nTop=979.19\r\nBLeft=740.16\r\nBTop=489.60",
+          "MetaFields": {
+            "Count": 13,
+            "items": [
+              {
+                "ID": 1,
+                "Name": "id",
+                "OrderNo": 1,
+                "DataType": 2,
+                "KeyFieldType": 1,
+                "DefaultValue": "{auto_increment}",
+                "Not_Nullable": true
+              },
+              {
+                "ID": 2,
+                "Name": "emp_id",
+                "OrderNo": 2,
+                "DisplayName": "雇员编号",
+                "DataType": 2,
+                "KeyFieldType": 3,
+                "RelateTable": "employee_info",
+                "RelateField": "id",
+                "GraphDesc": "P1=1330.69,1210.00\r\nP2=1406.00,1210.00\r\nP3=1406.00,1189.00\r\nP4=1480.33,1189.00\r\nHookP1=193.31,35.92\r\nHookP2=19.67,209.81\r\nMod_OP1=0\r\nMod_OP2=0\r\nMod_CP=0\r\nHorz1=1\r\nHorz2=1"
+              },
+              {
+                "ID": 3,
+                "Name": "org_id",
+                "OrderNo": 3,
+                "DisplayName": "机构号",
+                "DataType": 2
+              },
+              {
+                "ID": 4,
+                "Name": "team_id",
+                "OrderNo": 4,
+                "DisplayName": "车队号",
+                "DataType": 2
+              },
+              {
+                "ID": 5,
+                "Name": "license_type",
+                "OrderNo": 5,
+                "DisplayName": "准驾车型",
+                "DataType": 1,
+                "DataLength": 1
+              },
+              {
+                "ID": 6,
+                "Name": "init_license_date",
+                "OrderNo": 6,
+                "DisplayName": "初次领证日期",
+                "DataType": 4,
+                "DataTypeName": "date"
+              },
+              {
+                "ID": 7,
+                "Name": "expire_date",
+                "OrderNo": 7,
+                "DisplayName": "有效截止日期",
+                "DataType": 4,
+                "DataTypeName": "date"
+              },
+              {
+                "ID": 8,
+                "Name": "license_no",
+                "OrderNo": 8,
+                "DisplayName": "驾驶证号",
+                "DataType": 1,
+                "DataLength": 30
+              },
+              {
+                "ID": 9,
+                "Name": "license_picture_url",
+                "OrderNo": 9,
+                "DisplayName": "驾照图片",
+                "DataType": 1,
+                "DataLength": 255
+              },
+              {
+                "ID": 10,
+                "Name": "is_enabled",
+                "Memo": "状态 0：禁用 1：正常",
+                "OrderNo": 10,
+                "DisplayName": "状态",
+                "DataType": 2
+              },
+              {
+                "ID": 11,
+                "Name": "create_time",
+                "OrderNo": 11,
+                "DisplayName": "创建时间",
+                "DataType": 4,
+                "Not_Nullable": true
+              },
+              {
+                "ID": 12,
+                "Name": "update_time",
+                "OrderNo": 12,
+                "DisplayName": "更新时间",
+                "DataType": 4
+              },
+              {
+                "ID": 13,
+                "Name": "is_deleted",
+                "Memo": "删除标记（0:不可用 1:可用）",
+                "OrderNo": 13,
+                "DisplayName": "删除标记",
+                "DataType": 1,
+                "DefaultValue": "0",
+                "Not_Nullable": true,
+                "DataLength": 20
+              }
+            ]
+          }
+        },
+        {
+          "Name": "truck_info",
+          "Caption": "车辆信息表",
+          "OrderNo": 23,
+          "GraphDesc": "Left=751.99\r\nTop=315.33\r\nBLeft=376.00\r\nBTop=157.67",
+          "MetaFields": {
+            "Count": 14,
+            "items": [
+              {
+                "ID": 1,
+                "Name": "id",
+                "OrderNo": 1,
+                "DisplayName": "id",
+                "DataType": 2,
+                "KeyFieldType": 1,
+                "DefaultValue": "{auto_increment}",
+                "Not_Nullable": true
+              },
+              {
+                "ID": 2,
+                "Name": "team_id",
+                "OrderNo": 2,
+                "DisplayName": "所属车队id",
+                "DataType": 2,
+                "KeyFieldType": 3,
+                "RelateTable": "truck_team",
+                "RelateField": "id"
+              },
+              {
+                "ID": 3,
+                "Name": "truck_no",
+                "OrderNo": 3,
+                "DisplayName": "车牌号码",
+                "DataType": 1,
+                "DataLength": 50
+              },
+              {
+                "ID": 4,
+                "Name": "truck_model_id",
+                "OrderNo": 4,
+                "DisplayName": "型号",
+                "DataType": 1,
+                "KeyFieldType": 3,
+                "RelateTable": "truck_model",
+                "RelateField": "id",
+                "DataLength": 50
+              },
+              {
+                "ID": 5,
+                "Name": "device_gps_id",
+                "OrderNo": 5,
+                "DisplayName": "GPS设备id",
+                "DataType": 1,
+                "DataLength": 50
+              },
+              {
+                "ID": 6,
+                "Name": "engine_no",
+                "OrderNo": 6,
+                "DisplayName": "发动机编码",
+                "DataType": 1,
+                "DataLength": 200
+              },
+              {
+                "ID": 7,
+                "Name": "license_registration_date",
+                "OrderNo": 7,
+                "DisplayName": "注册时间",
+                "DataType": 4
+              },
+              {
+                "ID": 8,
+                "Name": "license_last_check_date",
+                "OrderNo": 8,
+                "DisplayName": "最后年检日期",
+                "DataType": 4
+              },
+              {
+                "ID": 9,
+                "Name": "license_expire_date",
+                "OrderNo": 9,
+                "DisplayName": "失效事件日期",
+                "DataType": 4
+              },
+              {
+                "ID": 10,
+                "Name": "picture_url",
+                "OrderNo": 10,
+                "DisplayName": "图片信息",
+                "DataType": 1,
+                "DataLength": 255
+              },
+              {
+                "ID": 11,
+                "Name": "is_enabled",
+                "Memo": "状态 0：禁用 1：正常",
+                "OrderNo": 11,
+                "DisplayName": "状态",
+                "DataType": 6,
+                "DefaultValue": "1",
+                "Not_Nullable": true
+              },
+              {
+                "ID": 12,
+                "Name": "create_time",
+                "OrderNo": 12,
+                "DisplayName": "创建时间",
+                "DataType": 4,
+                "Not_Nullable": true
+              },
+              {
+                "ID": 13,
+                "Name": "update_time",
+                "OrderNo": 13,
+                "DisplayName": "更新时间",
+                "DataType": 4
+              },
+              {
+                "ID": 14,
+                "Name": "is_deleted",
+                "Memo": "删除标记（0:不可用 1:可用）",
+                "OrderNo": 14,
+                "DisplayName": "删除标记",
+                "DataType": 1,
+                "DefaultValue": "0",
+                "Not_Nullable": true,
+                "DataLength": 20
+              }
+            ]
+          }
+        },
+        {
+          "Name": "truck_model",
+          "OrderNo": 24,
+          "GraphDesc": "Left=428.55\r\nTop=304.22\r\nBLeft=214.28\r\nBTop=152.11",
+          "MetaFields": {
+            "Count": 17,
+            "items": [
+              {
+                "ID": 1,
+                "Name": "id",
+                "OrderNo": 1,
+                "DataType": 2,
+                "KeyFieldType": 1,
+                "DefaultValue": "{auto_increment}",
+                "Not_Nullable": true
+              },
+              {
+                "ID": 2,
+                "Name": "model_name",
+                "OrderNo": 2,
+                "DisplayName": "型号名称",
+                "DataType": 1,
+                "DataLength": 10
+              },
+              {
+                "ID": 3,
+                "Name": "model_type",
+                "OrderNo": 3,
+                "DisplayName": "类型",
+                "DataType": 1,
+                "DataLength": 10
+              },
+              {
+                "ID": 4,
+                "Name": "model_no",
+                "OrderNo": 4,
+                "DisplayName": "型号编码",
+                "DataType": 1,
+                "DataLength": 40
+              },
+              {
+                "ID": 5,
+                "Name": "brand",
+                "OrderNo": 5,
+                "DisplayName": "品牌",
+                "DataType": 1,
+                "DataLength": 10
+              },
+              {
+                "ID": 6,
+                "Name": "truck_weight",
+                "Memo": "整车重量 吨",
+                "OrderNo": 6,
+                "DisplayName": "整车重量",
+                "DataType": 3,
+                "DataLength": 10,
+                "DataScale": 2
+              },
+              {
+                "ID": 7,
+                "Name": "load_weight",
+                "Memo": "额定载重 吨",
+                "OrderNo": 7,
+                "DisplayName": "额定载重",
+                "DataType": 3,
+                "DataLength": 10,
+                "DataScale": 2
+              },
+              {
+                "ID": 8,
+                "Name": "total_weight",
+                "Memo": "总质量 吨",
+                "OrderNo": 8,
+                "DisplayName": "总质量",
+                "DataType": 3,
+                "DataLength": 10,
+                "DataScale": 2
+              },
+              {
+                "ID": 9,
+                "Name": "eev",
+                "OrderNo": 9,
+                "DisplayName": "排放标准",
+                "DataType": 1,
+                "DataLength": 10
+              },
+              {
+                "ID": 10,
+                "Name": "boxcar_len",
+                "OrderNo": 10,
+                "DisplayName": "货箱长m",
+                "DataType": 3,
+                "DataLength": 10,
+                "DataScale": 2
+              },
+              {
+                "ID": 11,
+                "Name": "boxcar_wd",
+                "OrderNo": 11,
+                "DisplayName": "货箱宽m",
+                "DataType": 3,
+                "DataLength": 10,
+                "DataScale": 2
+              },
+              {
+                "ID": 12,
+                "Name": "boxcar_hg",
+                "OrderNo": 12,
+                "DisplayName": "货箱高m",
+                "DataType": 3,
+                "DataLength": 10,
+                "DataScale": 2
+              },
+              {
+                "ID": 13,
+                "Name": "max_speed",
+                "Memo": "最高时速 千米每时",
+                "OrderNo": 13,
+                "DisplayName": "最高时速",
+                "DataType": 2
+              },
+              {
+                "ID": 14,
+                "Name": "oil_vol",
+                "Memo": "油箱容积 升",
+                "OrderNo": 14,
+                "DisplayName": "油箱容积",
+                "DataType": 2
+              },
+              {
+                "ID": 15,
+                "Name": "create_time",
+                "OrderNo": 15,
+                "DataType": 4
+              },
+              {
+                "ID": 16,
+                "Name": "update_time",
+                "OrderNo": 16,
+                "DataType": 4
+              },
+              {
+                "ID": 17,
+                "Name": "is_deleted",
+                "OrderNo": 17,
+                "DataType": 1,
+                "DataLength": 1
+              }
+            ]
+          }
+        },
+        {
+          "Name": "truck_team",
+          "Caption": "车队表",
+          "OrderNo": 25,
+          "GraphDesc": "Left=1482.10\r\nTop=669.85\r\nBLeft=741.05\r\nBTop=334.92",
+          "MetaFields": {
+            "Count": 8,
+            "items": [
+              {
+                "ID": 1,
+                "Name": "id",
+                "OrderNo": 1,
+                "DisplayName": "id",
+                "DataType": 2,
+                "KeyFieldType": 1,
+                "DefaultValue": "{auto_increment}",
+                "Not_Nullable": true
+              },
+              {
+                "ID": 2,
+                "Name": "name",
+                "OrderNo": 2,
+                "DisplayName": "车队名称",
+                "DataType": 1,
+                "DataLength": 100
+              },
+              {
+                "ID": 3,
+                "Name": "team_no",
+                "OrderNo": 3,
+                "DisplayName": "车队编号",
+                "DataType": 1,
+                "Not_Nullable": true,
+                "DataLength": 30
+              },
+              {
+                "ID": 4,
+                "Name": "org_id",
+                "OrderNo": 4,
+                "DisplayName": "所属机构",
+                "DataType": 2,
+                "DefaultValue": "0",
+                "Not_Nullable": true
+              },
+              {
+                "ID": 5,
+                "Name": "manager_emp_id",
+                "OrderNo": 5,
+                "DisplayName": "负责人",
+                "DataType": 2
+              },
+              {
+                "ID": 6,
+                "Name": "create_time",
+                "OrderNo": 6,
+                "DisplayName": "创建时间",
+                "DataType": 4,
+                "Not_Nullable": true
+              },
+              {
+                "ID": 7,
+                "Name": "update_time",
+                "OrderNo": 7,
+                "DisplayName": "更新时间",
+                "DataType": 4
+              },
+              {
+                "ID": 8,
+                "Name": "is_deleted",
+                "Memo": "删除标记（0:不可用 1:可用）",
+                "OrderNo": 8,
+                "DisplayName": "删除标记",
+                "DataType": 1,
+                "DefaultValue": "0",
+                "Not_Nullable": true,
+                "DataLength": 20
+              }
+            ]
+          }
+        },
+        {
+          "Name": "user_address",
+          "Caption": "地址簿",
+          "OrderNo": 26,
+          "GraphDesc": "Left=46.28\r\nTop=1351.10\r\nBLeft=23.14\r\nBTop=675.55",
+          "MetaFields": {
+            "Count": 12,
+            "items": [
+              {
+                "ID": 1,
+                "Name": "id",
+                "OrderNo": 1,
+                "DisplayName": "id",
+                "DataType": 2,
+                "KeyFieldType": 1,
+                "DefaultValue": "{auto_increment}",
+                "Not_Nullable": true
+              },
+              {
+                "ID": 2,
+                "Name": "user_id",
+                "OrderNo": 2,
+                "DisplayName": "用户id",
+                "DataType": 2,
+                "KeyFieldType": 3,
+                "RelateTable": "user_info",
+                "RelateField": "id",
+                "GraphDesc": "P1=76.98,1388.00\r\nP2=162.00,1388.00\r\nP3=162.00,1388.00\r\nP4=246.28,1388.00\r\nHookP1=85.02,208.22\r\nHookP2=115.72,36.90\r\nMod_OP1=0\r\nMod_OP2=0\r\nMod_CP=0\r\nHorz1=1\r\nHorz2=1"
+              },
+              {
+                "ID": 3,
+                "Name": "phone",
+                "OrderNo": 3,
+                "DisplayName": "电话号",
+                "DataType": 1,
+                "DataLength": 20
+              },
+              {
+                "ID": 4,
+                "Name": "province_id",
+                "OrderNo": 4,
+                "DisplayName": "所属省份id",
+                "DataType": 2
+              },
+              {
+                "ID": 5,
+                "Name": "city_id",
+                "OrderNo": 5,
+                "DisplayName": "所属城市id",
+                "DataType": 2
+              },
+              {
+                "ID": 6,
+                "Name": "district_id",
+                "OrderNo": 6,
+                "DisplayName": "所属区县id",
+                "DataType": 2
+              },
+              {
+                "ID": 7,
+                "Name": "complex_id",
+                "OrderNo": 7,
+                "DisplayName": "所属小区id",
+                "DataType": 2
+              },
+              {
+                "ID": 8,
+                "Name": "address",
+                "OrderNo": 8,
+                "DisplayName": "详细地址",
+                "DataType": 1,
+                "DataLength": 255
+              },
+              {
+                "ID": 9,
+                "Name": "is_default",
+                "Memo": "是否默认 0:否，1:是",
+                "OrderNo": 9,
+                "DisplayName": "是否默认",
+                "DataType": 5,
+                "DefaultValue": "0",
+                "Not_Nullable": true
+              },
+              {
+                "ID": 10,
+                "Name": "create_time",
+                "OrderNo": 10,
+                "DisplayName": "创建时间",
+                "DataType": 4,
+                "Not_Nullable": true
+              },
+              {
+                "ID": 11,
+                "Name": "update_time",
+                "OrderNo": 11,
+                "DisplayName": "更新时间",
+                "DataType": 4
+              },
+              {
+                "ID": 12,
+                "Name": "is_deleted",
+                "Memo": "删除标记（0:不可用 1:可用）",
+                "OrderNo": 12,
+                "DisplayName": "删除标记",
+                "DataType": 1,
+                "DefaultValue": "0",
+                "Not_Nullable": true,
+                "DataLength": 20
+              }
+            ]
+          }
+        },
+        {
+          "Name": "user_info",
+          "OrderNo": 27,
+          "GraphDesc": "Left=76.98\r\nTop=1179.78\r\nBLeft=38.49\r\nBTop=589.89",
+          "MetaFields": {
+            "Count": 14,
+            "items": [
+              {
+                "ID": 1,
+                "Name": "id",
+                "OrderNo": 1,
+                "DisplayName": "编号",
+                "DataType": 2,
+                "KeyFieldType": 1,
+                "DefaultValue": "{auto_increment}",
+                "Not_Nullable": true
+              },
+              {
+                "ID": 2,
+                "Name": "login_name",
+                "OrderNo": 2,
+                "DisplayName": "用户名称",
+                "DataType": 1,
+                "DataLength": 200
+              },
+              {
+                "ID": 3,
+                "Name": "nick_name",
+                "OrderNo": 3,
+                "DisplayName": "用户昵称",
+                "DataType": 1,
+                "DataLength": 200
+              },
+              {
+                "ID": 4,
+                "Name": "passwd",
+                "OrderNo": 4,
+                "DisplayName": "用户密码",
+                "DataType": 1,
+                "DataLength": 200
+              },
+              {
+                "ID": 5,
+                "Name": "real_name",
+                "OrderNo": 5,
+                "DisplayName": "用户姓名",
+                "DataType": 1,
+                "DataLength": 200
+              },
+              {
+                "ID": 6,
+                "Name": "phone_num",
+                "OrderNo": 6,
+                "DisplayName": "手机号",
+                "DataType": 1,
+                "DataLength": 200
+              },
+              {
+                "ID": 7,
+                "Name": "email",
+                "OrderNo": 7,
+                "DisplayName": "邮箱",
+                "DataType": 1,
+                "DataLength": 200
+              },
+              {
+                "ID": 8,
+                "Name": "head_img",
+                "OrderNo": 8,
+                "DisplayName": "头像",
+                "DataType": 1,
+                "DataLength": 200
+              },
+              {
+                "ID": 9,
+                "Name": "user_level",
+                "OrderNo": 9,
+                "DisplayName": "用户级别",
+                "DataType": 1,
+                "DataLength": 200
+              },
+              {
+                "ID": 10,
+                "Name": "birthday",
+                "OrderNo": 10,
+                "DisplayName": "用户生日",
+                "DataType": 4,
+                "DataTypeName": "date"
+              },
+              {
+                "ID": 11,
+                "Name": "gender",
+                "Memo": "性别 M男,F女",
+                "OrderNo": 11,
+                "DisplayName": "性别",
+                "DataType": 1,
+                "DataLength": 1
+              },
+              {
+                "ID": 12,
+                "Name": "create_time",
+                "OrderNo": 12,
+                "DisplayName": "创建时间",
+                "DataType": 4
+              },
+              {
+                "ID": 13,
+                "Name": "update_time",
+                "OrderNo": 13,
+                "DisplayName": "修改时间",
+                "DataType": 4
+              },
+              {
+                "ID": 14,
+                "Name": "is_deleted",
+                "OrderNo": 14,
+                "DisplayName": "状态",
+                "DataType": 1,
+                "DataLength": 200
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }]
+}
