@@ -1,0 +1,52 @@
+﻿package com.atguigu.tms.mock.config;
+
+/** Auto-decompiled from tms-mock JAR */
+public class com.atguigu.tms.mock.config.AppConfig {
+  public static java.lang.Long user_session_count;
+  public static java.lang.String reset_all_dim;
+  public static java.lang.String mock_clear_user;
+  public static java.lang.String mock_clear_busi;
+  public static java.lang.Integer mock_new_user;
+  public static java.lang.Integer mock_order_count;
+  public static java.lang.Integer mock_user_update_rate;
+  public static java.lang.String mock_date_str;
+  public static java.util.Date mock_date;
+  public static java.lang.Integer shift_interval_hour;
+  public static java.lang.Integer[] shift_clock;
+  public static java.lang.Long order_dur_hour_per100m;
+  public static java.lang.Integer line_new_2_driver_km;
+  public static java.lang.String default_plan_strategy;
+  public static java.lang.Integer[] collect_dur_minute_minmax;
+  public static java.lang.String mock_type;
+  public static java.lang.String mock_url;
+  public static java.lang.String[] collect_hours;
+  public static java.lang.String[] commit_hours;
+  public static java.lang.Integer collect_estimate_handle_hour;
+  public static java.lang.Integer commit_estimate_handle_hour;
+  public static java.lang.Integer send_estimate_handle_hour;
+  public static java.lang.Integer error_rate;
+  public static java.lang.Integer complex_num;
+  public static java.lang.Integer if_realtime;
+  public static java.lang.String if_reset_organ;
+  public static java.lang.String if_reset_line_base;
+  public static java.lang.String if_reset_truck;
+  public static java.lang.Integer cur_hour_clock;
+  public static java.lang.Integer[] start_time_weight;
+  public static java.lang.Integer[] payment_type_weight;
+  public static java.lang.String clear_courier_send;
+  public static java.lang.Integer new_courier_send;
+  public static java.lang.String clear_courier_collect;
+  public static java.lang.String reset_courier_collect;
+  public static java.lang.String reset_courier_delivery;
+  public static java.lang.String if_reset_sorter;
+  public static java.lang.String kafka_server;
+  public static java.lang.String kafka_topic;
+  public com.atguigu.tms.mock.config.AppConfig();
+  public void setOrderCount(java.lang.String);
+  public void setComplexNum(java.lang.String);
+  public void setNewUser(java.lang.String);
+  public void setMockClearBusi(java.lang.String);
+  public void setMockDate(java.lang.String);
+  public void setIf_get_coupon(java.lang.String);
+  static {};
+}
