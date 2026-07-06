@@ -1,0 +1,56 @@
+﻿package com.atguigu.tms.mock.bean;
+
+/** Auto-decompiled from tms-mock JAR */
+public class com.atguigu.tms.mock.bean.UserInfo implements java.io.Serializable {
+  private static final long serialVersionUID;
+  private java.lang.Long id;
+  private java.lang.String loginName;
+  private java.lang.String nickName;
+  private java.lang.String passwd;
+  private java.lang.String realName;
+  private java.lang.String phoneNum;
+  private java.lang.String email;
+  private java.lang.String headImg;
+  private java.lang.String userLevel;
+  private java.util.Date birthday;
+  private java.lang.String gender;
+  private java.util.Date createTime;
+  private java.util.Date updateTime;
+  private java.lang.String isDeleted;
+  com.atguigu.tms.mock.bean.UserAddress defaultAddress;
+  public com.atguigu.tms.mock.bean.UserInfo();
+  public java.lang.Long getId();
+  public java.lang.String getLoginName();
+  public java.lang.String getNickName();
+  public java.lang.String getPasswd();
+  public java.lang.String getRealName();
+  public java.lang.String getPhoneNum();
+  public java.lang.String getEmail();
+  public java.lang.String getHeadImg();
+  public java.lang.String getUserLevel();
+  public java.util.Date getBirthday();
+  public java.lang.String getGender();
+  public java.util.Date getCreateTime();
+  public java.util.Date getUpdateTime();
+  public java.lang.String getIsDeleted();
+  public com.atguigu.tms.mock.bean.UserAddress getDefaultAddress();
+  public void setId(java.lang.Long);
+  public void setLoginName(java.lang.String);
+  public void setNickName(java.lang.String);
+  public void setPasswd(java.lang.String);
+  public void setRealName(java.lang.String);
+  public void setPhoneNum(java.lang.String);
+  public void setEmail(java.lang.String);
+  public void setHeadImg(java.lang.String);
+  public void setUserLevel(java.lang.String);
+  public void setBirthday(java.util.Date);
+  public void setGender(java.lang.String);
+  public void setCreateTime(java.util.Date);
+  public void setUpdateTime(java.util.Date);
+  public void setIsDeleted(java.lang.String);
+  public void setDefaultAddress(com.atguigu.tms.mock.bean.UserAddress);
+  public boolean equals(java.lang.Object);
+  protected boolean canEqual(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+}

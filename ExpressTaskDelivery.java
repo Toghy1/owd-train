@@ -1,0 +1,53 @@
+﻿package com.atguigu.tms.mock.bean;
+
+/** Auto-decompiled from tms-mock JAR */
+public class com.atguigu.tms.mock.bean.ExpressTaskDelivery implements java.io.Serializable {
+  private static final long serialVersionUID;
+  private java.lang.Long id;
+  private java.lang.Long orderId;
+  private java.lang.String status;
+  private java.lang.Long orgId;
+  private java.lang.String orgName;
+  private java.lang.Long courierEmpId;
+  private java.lang.String courierName;
+  private java.util.Date estimatedEndTime;
+  private java.util.Date startDeliveryTime;
+  private java.util.Date deliveredTime;
+  private java.lang.String isRejected;
+  private java.util.Date createTime;
+  private java.util.Date updateTime;
+  private java.lang.String isDeleted;
+  public com.atguigu.tms.mock.bean.ExpressTaskDelivery();
+  public java.lang.Long getId();
+  public java.lang.Long getOrderId();
+  public java.lang.String getStatus();
+  public java.lang.Long getOrgId();
+  public java.lang.String getOrgName();
+  public java.lang.Long getCourierEmpId();
+  public java.lang.String getCourierName();
+  public java.util.Date getEstimatedEndTime();
+  public java.util.Date getStartDeliveryTime();
+  public java.util.Date getDeliveredTime();
+  public java.lang.String getIsRejected();
+  public java.util.Date getCreateTime();
+  public java.util.Date getUpdateTime();
+  public java.lang.String getIsDeleted();
+  public void setId(java.lang.Long);
+  public void setOrderId(java.lang.Long);
+  public void setStatus(java.lang.String);
+  public void setOrgId(java.lang.Long);
+  public void setOrgName(java.lang.String);
+  public void setCourierEmpId(java.lang.Long);
+  public void setCourierName(java.lang.String);
+  public void setEstimatedEndTime(java.util.Date);
+  public void setStartDeliveryTime(java.util.Date);
+  public void setDeliveredTime(java.util.Date);
+  public void setIsRejected(java.lang.String);
+  public void setCreateTime(java.util.Date);
+  public void setUpdateTime(java.util.Date);
+  public void setIsDeleted(java.lang.String);
+  public boolean equals(java.lang.Object);
+  protected boolean canEqual(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+}
