@@ -1,0 +1,50 @@
+﻿package com.atguigu.tms.mock.bean;
+
+/** Auto-decompiled from tms-mock JAR */
+public class com.atguigu.tms.mock.bean.OrderOrgBound implements java.io.Serializable {
+  private static final long serialVersionUID;
+  private java.lang.Long id;
+  private java.lang.Long orderId;
+  private java.lang.Long orgId;
+  private java.lang.String status;
+  private java.util.Date createTime;
+  private java.util.Date updateTime;
+  private java.util.Date inboundTime;
+  private java.lang.Long inboundEmpId;
+  private java.util.Date sortTime;
+  private java.lang.Long sorterEmpId;
+  private java.util.Date outboundTime;
+  private java.lang.Long outboundEmpId;
+  private java.lang.String isDeleted;
+  public com.atguigu.tms.mock.bean.OrderOrgBound();
+  public java.lang.Long getId();
+  public java.lang.Long getOrderId();
+  public java.lang.Long getOrgId();
+  public java.lang.String getStatus();
+  public java.util.Date getCreateTime();
+  public java.util.Date getUpdateTime();
+  public java.util.Date getInboundTime();
+  public java.lang.Long getInboundEmpId();
+  public java.util.Date getSortTime();
+  public java.lang.Long getSorterEmpId();
+  public java.util.Date getOutboundTime();
+  public java.lang.Long getOutboundEmpId();
+  public java.lang.String getIsDeleted();
+  public void setId(java.lang.Long);
+  public void setOrderId(java.lang.Long);
+  public void setOrgId(java.lang.Long);
+  public void setStatus(java.lang.String);
+  public void setCreateTime(java.util.Date);
+  public void setUpdateTime(java.util.Date);
+  public void setInboundTime(java.util.Date);
+  public void setInboundEmpId(java.lang.Long);
+  public void setSortTime(java.util.Date);
+  public void setSorterEmpId(java.lang.Long);
+  public void setOutboundTime(java.util.Date);
+  public void setOutboundEmpId(java.lang.Long);
+  public void setIsDeleted(java.lang.String);
+  public boolean equals(java.lang.Object);
+  protected boolean canEqual(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+}

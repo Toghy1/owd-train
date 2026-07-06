@@ -1,0 +1,50 @@
+﻿package com.atguigu.tms.mock.bean;
+
+/** Auto-decompiled from tms-mock JAR */
+public class com.atguigu.tms.mock.bean.TruckDriver implements java.io.Serializable {
+  private static final long serialVersionUID;
+  private java.lang.Long id;
+  private java.lang.Long empId;
+  private java.lang.Long orgId;
+  private java.lang.Long teamId;
+  private java.lang.String licenseType;
+  private java.util.Date initLicenseDate;
+  private java.util.Date expireDate;
+  private java.lang.String licenseNo;
+  private java.lang.String licensePictureUrl;
+  private java.lang.String isEnabled;
+  private java.util.Date createTime;
+  private java.util.Date updateTime;
+  private java.lang.String isDeleted;
+  public com.atguigu.tms.mock.bean.TruckDriver();
+  public java.lang.Long getId();
+  public java.lang.Long getEmpId();
+  public java.lang.Long getOrgId();
+  public java.lang.Long getTeamId();
+  public java.lang.String getLicenseType();
+  public java.util.Date getInitLicenseDate();
+  public java.util.Date getExpireDate();
+  public java.lang.String getLicenseNo();
+  public java.lang.String getLicensePictureUrl();
+  public java.lang.String getIsEnabled();
+  public java.util.Date getCreateTime();
+  public java.util.Date getUpdateTime();
+  public java.lang.String getIsDeleted();
+  public void setId(java.lang.Long);
+  public void setEmpId(java.lang.Long);
+  public void setOrgId(java.lang.Long);
+  public void setTeamId(java.lang.Long);
+  public void setLicenseType(java.lang.String);
+  public void setInitLicenseDate(java.util.Date);
+  public void setExpireDate(java.util.Date);
+  public void setLicenseNo(java.lang.String);
+  public void setLicensePictureUrl(java.lang.String);
+  public void setIsEnabled(java.lang.String);
+  public void setCreateTime(java.util.Date);
+  public void setUpdateTime(java.util.Date);
+  public void setIsDeleted(java.lang.String);
+  public boolean equals(java.lang.Object);
+  protected boolean canEqual(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+}

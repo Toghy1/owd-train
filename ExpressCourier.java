@@ -1,0 +1,53 @@
+﻿package com.atguigu.tms.mock.bean;
+
+/** Auto-decompiled from tms-mock JAR */
+public class com.atguigu.tms.mock.bean.ExpressCourier implements java.io.Serializable {
+  private static final long serialVersionUID;
+  private java.lang.Long id;
+  private java.lang.Long empId;
+  private com.atguigu.tms.mock.bean.EmployeeInfo employeeInfo;
+  private java.util.List<com.atguigu.tms.mock.bean.BaseComplex> baseComplexList;
+  private java.util.List<com.atguigu.tms.mock.bean.ExpressTaskCollect> expressTaskCollectList;
+  private java.util.List<com.atguigu.tms.mock.bean.ExpressTaskCollect> expressTaskCommitList;
+  private java.util.List<com.atguigu.tms.mock.bean.ExpressTaskDelivery> expressTaskDeliveryList;
+  private java.lang.Long complexId;
+  private java.lang.Long orgId;
+  private java.lang.String expressType;
+  private java.lang.String workingPhone;
+  private java.util.Date createTime;
+  private java.util.Date updateTime;
+  private java.lang.String isDeleted;
+  public com.atguigu.tms.mock.bean.ExpressCourier();
+  public java.lang.Long getId();
+  public java.lang.Long getEmpId();
+  public com.atguigu.tms.mock.bean.EmployeeInfo getEmployeeInfo();
+  public java.util.List<com.atguigu.tms.mock.bean.BaseComplex> getBaseComplexList();
+  public java.util.List<com.atguigu.tms.mock.bean.ExpressTaskCollect> getExpressTaskCollectList();
+  public java.util.List<com.atguigu.tms.mock.bean.ExpressTaskCollect> getExpressTaskCommitList();
+  public java.util.List<com.atguigu.tms.mock.bean.ExpressTaskDelivery> getExpressTaskDeliveryList();
+  public java.lang.Long getComplexId();
+  public java.lang.Long getOrgId();
+  public java.lang.String getExpressType();
+  public java.lang.String getWorkingPhone();
+  public java.util.Date getCreateTime();
+  public java.util.Date getUpdateTime();
+  public java.lang.String getIsDeleted();
+  public void setId(java.lang.Long);
+  public void setEmpId(java.lang.Long);
+  public void setEmployeeInfo(com.atguigu.tms.mock.bean.EmployeeInfo);
+  public void setBaseComplexList(java.util.List<com.atguigu.tms.mock.bean.BaseComplex>);
+  public void setExpressTaskCollectList(java.util.List<com.atguigu.tms.mock.bean.ExpressTaskCollect>);
+  public void setExpressTaskCommitList(java.util.List<com.atguigu.tms.mock.bean.ExpressTaskCollect>);
+  public void setExpressTaskDeliveryList(java.util.List<com.atguigu.tms.mock.bean.ExpressTaskDelivery>);
+  public void setComplexId(java.lang.Long);
+  public void setOrgId(java.lang.Long);
+  public void setExpressType(java.lang.String);
+  public void setWorkingPhone(java.lang.String);
+  public void setCreateTime(java.util.Date);
+  public void setUpdateTime(java.util.Date);
+  public void setIsDeleted(java.lang.String);
+  public boolean equals(java.lang.Object);
+  protected boolean canEqual(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+}

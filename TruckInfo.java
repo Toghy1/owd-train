@@ -1,0 +1,53 @@
+﻿package com.atguigu.tms.mock.bean;
+
+/** Auto-decompiled from tms-mock JAR */
+public class com.atguigu.tms.mock.bean.TruckInfo implements java.io.Serializable {
+  private static final long serialVersionUID;
+  private java.lang.Long id;
+  private java.lang.Long teamId;
+  private java.lang.String truckNo;
+  private java.lang.Long truckModelId;
+  private java.lang.String deviceGpsId;
+  private java.lang.String engineNo;
+  private java.util.Date licenseRegistrationDate;
+  private java.util.Date licenseLastCheckDate;
+  private java.util.Date licenseExpireDate;
+  private java.lang.String pictureUrl;
+  private java.lang.String isEnabled;
+  private java.util.Date createTime;
+  private java.util.Date updateTime;
+  private java.lang.String isDeleted;
+  public com.atguigu.tms.mock.bean.TruckInfo();
+  public java.lang.Long getId();
+  public java.lang.Long getTeamId();
+  public java.lang.String getTruckNo();
+  public java.lang.Long getTruckModelId();
+  public java.lang.String getDeviceGpsId();
+  public java.lang.String getEngineNo();
+  public java.util.Date getLicenseRegistrationDate();
+  public java.util.Date getLicenseLastCheckDate();
+  public java.util.Date getLicenseExpireDate();
+  public java.lang.String getPictureUrl();
+  public java.lang.String getIsEnabled();
+  public java.util.Date getCreateTime();
+  public java.util.Date getUpdateTime();
+  public java.lang.String getIsDeleted();
+  public void setId(java.lang.Long);
+  public void setTeamId(java.lang.Long);
+  public void setTruckNo(java.lang.String);
+  public void setTruckModelId(java.lang.Long);
+  public void setDeviceGpsId(java.lang.String);
+  public void setEngineNo(java.lang.String);
+  public void setLicenseRegistrationDate(java.util.Date);
+  public void setLicenseLastCheckDate(java.util.Date);
+  public void setLicenseExpireDate(java.util.Date);
+  public void setPictureUrl(java.lang.String);
+  public void setIsEnabled(java.lang.String);
+  public void setCreateTime(java.util.Date);
+  public void setUpdateTime(java.util.Date);
+  public void setIsDeleted(java.lang.String);
+  public boolean equals(java.lang.Object);
+  protected boolean canEqual(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+}
